@@ -1,0 +1,1757 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Industrial Cleaning Services | CleanScope Services</title>
+  <meta name="description"
+    content="CleanScope Services delivers professional industrial cleaning for warehouses, manufacturing facilities, production sites and logistics operations." />
+  <style>
+    :root {
+      --primary: #198AA6;
+      --primary-dark: #0E5B6E;
+      --accent: #FC8C4C;
+      --dark: #0e2230;
+      --gray: #5c6b78;
+      --light: #EBF4F7;
+      --white: #ffffff;
+      --radius: 14px;
+      --shadow: 0 10px 30px rgba(14, 34, 48, .08);
+      --shadow-lg: 0 22px 50px rgba(14, 34, 48, .16);
+      --max: 1180px;
+      --font: 'Segoe UI', system-ui, -apple-system, Roboto, Arial, sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 80px
+    }
+
+    body {
+      font-family: var(--font);
+      color: var(--dark);
+      line-height: 1.75;
+      background: var(--light);
+      overflow-x: hidden
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+      height: auto
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit
+    }
+
+    ul {
+      list-style: none
+    }
+
+    .container {
+      width: 92%;
+      max-width: var(--max);
+      margin: auto
+    }
+
+    section {
+      padding: 90px 0
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 32px;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 15px;
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: .35s;
+      letter-spacing: .3px
+    }
+
+    .btn-primary {
+      background: #FC8C4C;
+      color: #fff;
+      box-shadow: 0 8px 20px rgba(252, 140, 76, .35);
+    }
+
+    .btn-primary:hover {
+      background: #E06F2D;
+      color: #fff !important;
+      transform: translateY(-3px);
+      box-shadow: 0 14px 28px rgba(252, 140, 76, .45);
+    }
+
+    .btn-outline-light {
+      border-color: #fff;
+      color: #fff
+    }
+
+    .btn-outline-light:hover {
+      background: #FC8C4C;
+      border-color: #FC8C4C;
+      color: #fff;
+      box-shadow: 0 10px 24px rgba(252, 140, 76, .35);
+    }
+
+    .tagline {
+      display: inline-block;
+      background: rgba(25, 138, 166, .12);
+      color: var(--primary);
+      padding: 6px 18px;
+      border-radius: 50px;
+      font-size: 12.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.6px;
+      margin-bottom: 16px
+    }
+
+    .sec-head {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 55px
+    }
+
+    .sec-head h2 {
+      font-size: clamp(28px, 4vw, 42px);
+      line-height: 1.25;
+      margin-bottom: 14px
+    }
+
+    .sec-head p {
+      color: var(--gray);
+      font-size: 16.5px
+    }
+
+    /* HEADER */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      padding: 16px 0;
+      transition: .4s;
+      background: transparent
+    }
+
+    header.scrolled {
+      background: #fff;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, .09);
+      padding: 10px 0
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      color: #fff;
+      transition: .4s;
+      text-decoration: none;
+    }
+
+    .logo-img {
+      height: 70px;
+      width: 150x;
+      object-fit: contain;
+      display: block;
+      background: transparent !important;
+      padding: 0 !important;
+      border: none !important;
+      border-radius: 0 !important;
+      box-shadow: none !important;
+      transition: all .3s ease;
+    }
+
+    header.scrolled .logo-img {
+      height: 70px;
+      width: 150x;
+      background: transparent !important;
+      padding: 0 !important;
+      box-shadow: none !important;
+    }
+
+    .footer-logo-img {
+      height: 46px;
+      margin-bottom: 18px;
+      background: transparent !important;
+      padding: 0 !important;
+      border: none !important;
+      box-shadow: none !important;
+    }
+
+    .logo-mark {
+      width: 52px;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      background: transparent;
+    }
+
+    .logo-mark svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+      filter: drop-shadow(0 2px 8px rgba(25, 138, 166, .28));
+    }
+
+    .logo-txt {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.05;
+    }
+
+    .logo-txt strong {
+      display: block;
+      font-size: 29px;
+      font-weight: 900;
+      letter-spacing: 1px;
+      color: #ffffff;
+      transition: color .4s;
+    }
+
+    .logo-txt strong .accent-a {
+      color: #FC8C4C;
+    }
+
+    .logo-txt small {
+      display: block;
+      font-size: 12.5px;
+      letter-spacing: 4.5px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #e0f2f7;
+      margin-top: 3px;
+      transition: color .4s;
+    }
+
+    header.scrolled .logo-txt strong {
+      color: var(--dark);
+    }
+
+    header.scrolled .logo-txt small {
+      color: var(--primary);
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      gap: 30px
+    }
+
+    .menu a {
+      color: #fff;
+      font-weight: 500;
+      font-size: 15.5px;
+      position: relative;
+      transition: .3s
+    }
+
+    header.scrolled .menu a {
+      color: var(--dark)
+    }
+
+    .menu a::after {
+      content: '';
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--primary);
+      transition: .3s
+    }
+
+    .menu a:hover::after,
+    .menu a.active::after {
+      width: 100%
+    }
+
+    .menu a:hover {
+      color: var(--primary)
+    }
+
+    .nav-cta {
+      padding: 11px 26px !important;
+      font-size: 14px !important;
+      color: #fff !important
+    }
+
+    .nav-cta::after {
+      display: none !important
+    }
+
+    .menu-close-wrap {
+      display: none;
+    }
+
+    .menu-backdrop {
+      display: none;
+    }
+
+    .burger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: 0;
+      padding: 6px
+    }
+
+    .burger span {
+      width: 26px;
+      height: 3px;
+      background: #fff;
+      border-radius: 3px;
+      transition: .3s
+    }
+
+    header.scrolled .burger span {
+      background: var(--dark)
+    }
+
+    .burger.open span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg)
+    }
+
+    .burger.open span:nth-child(2) {
+      opacity: 0
+    }
+
+    .burger.open span:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg)
+    }
+
+    /* BANNER */
+    .page-banner {
+      background: linear-gradient(100deg, rgba(14, 60, 75, .93), rgba(25, 138, 166, .82)), url('img/industrialmainpage.png') center/cover;
+      padding: 170px 0 90px;
+      color: #fff
+    }
+
+    .page-banner .tagline {
+      background: rgba(255, 255, 255, .15);
+      color: #fff;
+      backdrop-filter: blur(4px)
+    }
+
+    .page-banner h1 {
+      font-size: clamp(34px, 5vw, 58px);
+      font-weight: 800;
+      line-height: 1.12;
+      margin-bottom: 16px
+    }
+
+    .page-banner h1 span {
+      background: linear-gradient(90deg, var(--accent), #FC8C4C);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent
+    }
+
+    .page-banner p {
+      font-size: 17.5px;
+      color: #dbe5ea;
+      max-width: 700px;
+      margin-bottom: 32px
+    }
+
+    .banner-btns {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap
+    }
+
+    /* STATS BAR */
+    .stats-bar {
+      background: var(--primary);
+      padding: 28px 0
+    }
+
+    .stats-inner {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+      text-align: center
+    }
+
+    .stat-item strong {
+      display: block;
+      font-size: 32px;
+      font-weight: 800;
+      color: #fff;
+      line-height: 1
+    }
+
+    .stat-item span {
+      font-size: 12.5px;
+      color: rgba(255, 255, 255, .8);
+      text-transform: uppercase;
+      letter-spacing: 1.4px;
+      margin-top: 4px;
+      display: block
+    }
+
+    /* INTRO */
+    .intro-section {
+      background: #fff
+    }
+
+    .intro-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center
+    }
+
+    .intro-text h2 {
+      font-size: clamp(26px, 3.5vw, 36px);
+      font-weight: 800;
+      margin-bottom: 18px;
+      line-height: 1.25
+    }
+
+    .intro-text p {
+      color: var(--gray);
+      font-size: 16px;
+      margin-bottom: 18px
+    }
+
+    .intro-img img {
+      width: 100%;
+      height: 460px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: var(--shadow-lg)
+    }
+
+    .intro-img {
+      position: relative
+    }
+
+    .img-badge {
+      position: absolute;
+      bottom: -22px;
+      right: -18px;
+      background: #198AA6;
+      color: #fff;
+      padding: 22px 28px;
+      border-radius: 16px;
+      box-shadow: var(--shadow-lg);
+      text-align: center
+    }
+
+    .img-badge strong {
+      display: block;
+      font-size: 28px;
+      font-weight: 800;
+      line-height: 1;
+      color: var(--accent)
+    }
+
+    .img-badge span {
+      font-size: 11px;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      opacity: .8;
+      margin-top: 3px;
+      display: block
+    }
+
+    /* SAFETY SECTION */
+    .safety-section {
+      background: var(--light)
+    }
+
+    .safety-wrap {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 60px;
+      align-items: center
+    }
+
+    .safety-text h2 {
+      font-size: clamp(24px, 3vw, 34px);
+      font-weight: 800;
+      margin-bottom: 16px
+    }
+
+    .safety-text p {
+      color: var(--gray);
+      font-size: 16px;
+      margin-bottom: 16px
+    }
+
+    .safety-points {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 28px
+    }
+
+    .safety-point {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start
+    }
+
+    .sp-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, rgba(25, 138, 166, .15), rgba(25, 138, 166, .05));
+      display: grid;
+      place-items: center;
+      color: var(--primary);
+      flex-shrink: 0
+    }
+
+    .sp-icon svg {
+      width: 22px;
+      height: 22px
+    }
+
+    .safety-point h4 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 3px
+    }
+
+    .safety-point p {
+      color: var(--gray);
+      font-size: 14.5px;
+      margin: 0
+    }
+
+    .safety-img img {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: var(--shadow-lg)
+    }
+
+    /* SERVICES */
+    .services-section {
+      background: #fff
+    }
+
+    .services-wrap {
+      display: grid;
+      grid-template-columns: 1.2fr 0.9fr;
+      gap: 56px;
+      align-items: start
+    }
+
+    .services-text h2 {
+      font-size: clamp(26px, 3.5vw, 36px);
+      font-weight: 800;
+      margin-bottom: 16px
+    }
+
+    .services-text p {
+      color: var(--gray);
+      font-size: 16px;
+      margin-bottom: 28px
+    }
+
+    .highlight-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px
+    }
+
+    .h-card {
+      background: var(--light);
+      border-radius: 12px;
+      padding: 20px;
+      border-left: 4px solid var(--primary)
+    }
+
+    .h-card h4 {
+      font-size: 15.5px;
+      font-weight: 700;
+      margin-bottom: 6px
+    }
+
+    .h-card p {
+      color: var(--gray);
+      font-size: 14px;
+      margin: 0
+    }
+
+    .checklist-box {
+      background: #198AA6;
+      border-radius: 20px;
+      padding: 40px 36px
+    }
+
+    .checklist-box h3 {
+      font-size: 22px;
+      font-weight: 800;
+      margin-bottom: 8px;
+      color: #fff
+    }
+
+    .checklist-box .sub {
+      color: #e6f4f8;
+      font-size: 14.5px;
+      margin-bottom: 26px
+    }
+
+    .checklist-box ul {
+      display: flex;
+      flex-direction: column;
+      gap: 0
+    }
+
+    .checklist-box li {
+      position: relative;
+      padding: 11px 0 11px 36px;
+      font-size: 15px;
+      color: #fff;
+      border-bottom: 1px solid rgba(255, 255, 255, .15)
+    }
+
+    .checklist-box li:last-child {
+      border-bottom: none
+    }
+
+    .checklist-box li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      top: 11px;
+      width: 22px;
+      height: 22px;
+      background: #FC8C4C;
+      color: #fff;
+      border-radius: 50%;
+      font-size: 13px;
+      font-weight: 700;
+      display: grid;
+      place-items: center;
+      line-height: 1;
+    }
+
+    /* TAILORED SECTION */
+    .tailored-section {
+      background: var(--light)
+    }
+
+    .tailored-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 56px;
+      align-items: center
+    }
+
+    .tailored-text h2 {
+      font-size: clamp(26px, 3.5vw, 36px);
+      font-weight: 800;
+      margin-bottom: 18px
+    }
+
+    .tailored-text p {
+      color: var(--gray);
+      font-size: 16px;
+      margin-bottom: 16px
+    }
+
+    .process-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      margin-top: 30px
+    }
+
+    .step {
+      display: flex;
+      gap: 18px;
+      align-items: flex-start
+    }
+
+    .step-num {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: #fff;
+      font-size: 16px;
+      font-weight: 800;
+      display: grid;
+      place-items: center;
+      flex-shrink: 0
+    }
+
+    .step h4 {
+      font-size: 16.5px;
+      font-weight: 700;
+      margin-bottom: 4px
+    }
+
+    .step p {
+      color: var(--gray);
+      font-size: 14.5px;
+      margin: 0
+    }
+
+    .tailored-img img {
+      width: 100%;
+      height: 440px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: var(--shadow-lg)
+    }
+
+    /* PROFESSIONALS */
+    .pro-section {
+      background: #fff;
+    }
+
+    .pro-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 28px;
+      max-width: 980px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 768px) {
+      .pro-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .pro-card {
+      background: var(--light);
+      border-radius: var(--radius);
+      padding: 36px 30px;
+      border: 1px solid #dce8ea;
+      transition: .35s;
+      position: relative;
+      overflow: hidden
+    }
+
+    .pro-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: .4s
+    }
+
+    .pro-card:hover::after {
+      transform: scaleX(1)
+    }
+
+    .pro-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+      background: #fff
+    }
+
+    .pro-num {
+      font-size: 52px;
+      font-weight: 800;
+      color: rgba(25, 138, 166, .15);
+      line-height: 1;
+      margin-bottom: 10px
+    }
+
+    .pro-card h3 {
+      font-size: 19px;
+      font-weight: 700;
+      margin-bottom: 10px
+    }
+
+    .pro-card p {
+      color: var(--gray);
+      font-size: 15px;
+      line-height: 1.75
+    }
+
+    /* CTA */
+    .cta-section {
+      background: #198AA6;
+      padding: 90px 0
+    }
+
+    .cta-inner {
+      text-align: center;
+      max-width: 720px;
+      margin: auto
+    }
+
+    .cta-inner h2 {
+      font-size: clamp(28px, 4vw, 46px);
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 16px;
+      line-height: 1.2
+    }
+
+    .cta-inner .sub-line {
+      font-size: 15px;
+      font-weight: 600;
+      color: #FC8C4C;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 14px
+    }
+
+    .cta-inner p {
+      color: #e6f4f8;
+      font-size: 16.5px;
+      margin-bottom: 36px
+    }
+
+    .cta-btns {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap
+    }
+
+    /* FOOTER */
+    footer {
+      background: #1e2428;
+      color: #a5b6c0;
+      padding: 70px 0 0
+    }
+
+    .f-grid {
+      display: grid;
+      grid-template-columns: 1.7fr 1fr 1.1fr 1.3fr;
+      gap: 40px;
+      padding-bottom: 50px
+    }
+
+    footer h4 {
+      color: #fff;
+      font-size: 17px;
+      margin-bottom: 20px
+    }
+
+    footer li {
+      margin-bottom: 11px;
+      font-size: 15px
+    }
+
+    footer li a:hover {
+      color: var(--accent);
+      padding-left: 5px;
+      transition: .3s;
+      display: inline-block
+    }
+
+    footer .logo {
+      color: #fff;
+      margin-bottom: 16px
+    }
+
+    .f-bottom {
+      border-top: 1px solid rgba(255, 255, 255, .1);
+      padding: 22px 0;
+      text-align: center;
+      font-size: 14px
+    }
+
+    .f-bottom span {
+      color: var(--accent)
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(36px);
+      transition: .8s cubic-bezier(.2, .8, .2, 1)
+    }
+
+    .reveal.in {
+      opacity: 1;
+      transform: none
+    }
+
+    @media(max-width:992px) {
+
+      .intro-wrap,
+      .safety-wrap,
+      .tailored-wrap,
+      .services-wrap {
+        grid-template-columns: 1fr
+      }
+
+      .intro-img {
+        order: -1
+      }
+
+      .safety-img {
+        order: -1
+      }
+
+      .tailored-img {
+        order: -1
+      }
+
+      .f-grid {
+        grid-template-columns: 1fr 1fr
+      }
+    }
+
+    @media(max-width:768px) {
+      section {
+        padding: 65px 0
+      }
+
+      .burger {
+        display: flex
+      }
+
+      .menu-backdrop {
+        display: block;
+        position: fixed;
+        inset: 0;
+        background: rgba(14, 34, 48, 0.6);
+        backdrop-filter: blur(4px);
+        opacity: 0;
+        visibility: hidden;
+        transition: .35s ease;
+        z-index: 998;
+      }
+
+      .menu-backdrop.open {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 85%;
+        max-width: 320px;
+        height: 100vh;
+        background: var(--light);
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        gap: 2px;
+        padding: 24px 20px 40px;
+        box-shadow: -10px 0 35px rgba(0, 0, 0, .2);
+        transition: right .35s cubic-bezier(0.4, 0, 0.2, 1);
+        z-index: 999;
+        overflow-y: auto;
+      }
+
+      .menu.open {
+        right: 0;
+      }
+
+      .menu-close-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding-bottom: 16px;
+        margin-bottom: 12px;
+        border-bottom: 1px solid #eef3f4;
+      }
+
+      .menu-drawer-title {
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        color: var(--primary);
+      }
+
+      .menu-close {
+        background: #f0f6f6;
+        border: none;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        font-size: 24px;
+        line-height: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        color: var(--dark);
+        transition: .25s;
+      }
+
+      .menu-close:hover {
+        background: var(--primary);
+        color: #fff;
+      }
+
+      .menu a:not(.nav-cta) {
+        color: var(--dark) !important;
+        width: 100%;
+        padding: 13px 14px;
+        border-radius: 8px;
+        border-bottom: 1px solid #f2f6f7;
+        font-size: 16px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        transition: .2s;
+      }
+
+      .menu a::after {
+        display: none !important;
+      }
+
+      .menu a:not(.nav-cta):hover {
+        background: #f4fafb;
+        color: #FC8C4C !important;
+      }
+
+      .menu a:not(.nav-cta).active {
+        color: var(--primary) !important;
+        background: rgba(25, 138, 166, 0.08);
+        font-weight: 700;
+      }
+
+      .menu .menu-cta-wrap {
+        margin-top: 18px;
+        width: 100%;
+      }
+
+      .menu a.nav-cta,
+      .menu .nav-cta {
+        background: #FC8C4C !important;
+        color: #ffffff !important;
+        border: none !important;
+        border-bottom: none !important;
+        width: 100% !important;
+        text-align: center !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding: 14px 24px !important;
+        border-radius: 50px !important;
+        font-size: 15px !important;
+        font-weight: 700 !important;
+        box-shadow: 0 6px 18px rgba(252, 140, 76, .35) !important;
+        transition: .3s !important;
+      }
+
+      .menu a.nav-cta:hover,
+      .menu .nav-cta:hover {
+        background: #E06F2D !important;
+        color: #ffffff !important;
+        box-shadow: 0 10px 24px rgba(252, 140, 76, .48) !important;
+        transform: translateY(-2px);
+      }
+
+      .f-grid {
+        grid-template-columns: 1fr;
+        gap: 30px
+      }
+
+      .logo-img {
+        height: 38px;
+        padding: 0 !important;
+        background: transparent !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+      }
+
+      header.scrolled .logo-img {
+        height: 35px;
+        padding: 0 !important;
+        background: transparent !important;
+        box-shadow: none !important;
+      }
+
+      .img-badge {
+        right: 10px
+      }
+
+      .highlight-cards {
+        grid-template-columns: 1fr
+      }
+
+      .stats-inner {
+        gap: 28px
+      }
+    }
+
+    /* BOTTOM INQUIRY SECTION */
+    .inquiry-section {
+      background: var(--light);
+      padding: 90px 0;
+      position: relative;
+    }
+
+    .inquiry-card {
+      background: #fff;
+      border-radius: 24px;
+      box-shadow: var(--shadow-lg);
+      border: 1px solid rgba(25, 138, 166, 0.15);
+      padding: 50px 48px;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .inquiry-header {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 40px;
+    }
+
+    .inquiry-header h2 {
+      font-size: clamp(26px, 3.5vw, 36px);
+      font-weight: 800;
+      color: var(--dark);
+      margin: 12px 0 10px;
+    }
+
+    .inquiry-header p {
+      color: var(--gray);
+      font-size: 15.5px;
+      line-height: 1.6;
+    }
+
+    .inquiry-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .inquiry-group {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .inquiry-group.full-width {
+      grid-column: 1 / -1;
+    }
+
+    .inquiry-group label {
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--dark);
+      letter-spacing: .3px;
+    }
+
+    .inquiry-group label span {
+      color: var(--accent);
+    }
+
+    .inquiry-group input,
+    .inquiry-group select,
+    .inquiry-group textarea {
+      width: 100%;
+      padding: 13px 16px;
+      border: 1.5px solid #dce8ea;
+      border-radius: 10px;
+      font-size: 15px;
+      font-family: var(--font);
+      color: var(--dark);
+      background: #f7fbfc;
+      transition: .3s;
+      outline: none;
+    }
+
+    .inquiry-group input:focus,
+    .inquiry-group select:focus,
+    .inquiry-group textarea:focus {
+      border-color: var(--primary);
+      background: #fff;
+      box-shadow: 0 0 0 4px rgba(25, 138, 166, .12);
+    }
+
+    .inquiry-group textarea {
+      resize: vertical;
+      min-height: 110px;
+    }
+
+    .inquiry-actions {
+      grid-column: 1 / -1;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .inquiry-btn {
+      min-width: 240px;
+      padding: 15px 36px;
+      background: #FC8C4C;
+      color: #fff;
+      border: none;
+      border-radius: 50px;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      letter-spacing: .4px;
+      transition: .35s;
+      box-shadow: 0 8px 20px rgba(252, 140, 76, .35);
+    }
+
+    .inquiry-btn:hover {
+      background: #E06F2D;
+      transform: translateY(-3px);
+      box-shadow: 0 14px 28px rgba(252, 140, 76, .45);
+    }
+
+    .inquiry-success {
+      display: none;
+      background: linear-gradient(135deg, rgba(252, 140, 76, .12), rgba(25, 138, 166, .08));
+      border: 1.5px solid var(--accent);
+      border-radius: 14px;
+      padding: 24px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .inquiry-success h4 {
+      color: var(--primary-dark);
+      font-size: 19px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .inquiry-success p {
+      color: var(--gray);
+      font-size: 15px;
+    }
+
+    @media (max-width: 768px) {
+      .inquiry-card {
+        padding: 36px 20px;
+      }
+
+      .inquiry-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .inquiry-btn {
+        width: 100%;
+      }
+    }
+
+
+    /* SERVICES DROPDOWN */
+    .has-dropdown {
+      position: relative;
+    }
+
+    .dropdown-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+    }
+
+    .dropdown-toggle .chevron {
+      transition: transform .3s ease;
+    }
+
+    .has-dropdown:hover .dropdown-toggle .chevron {
+      transform: rotate(180deg);
+    }
+
+    .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%) translateY(14px);
+      background: #ffffff;
+      min-width: 250px;
+      padding: 10px 8px;
+      border-radius: 14px;
+      box-shadow: 0 16px 40px rgba(14, 34, 48, 0.18);
+      border: 1px solid rgba(25, 138, 166, 0.15);
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: all .25s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 1100;
+      list-style: none;
+    }
+
+    .dropdown-menu::before {
+      content: '';
+      position: absolute;
+      top: -6px;
+      left: 50%;
+      transform: translateX(-50%) rotate(45deg);
+      width: 12px;
+      height: 12px;
+      background: #ffffff;
+      border-left: 1px solid rgba(25, 138, 166, 0.15);
+      border-top: 1px solid rgba(25, 138, 166, 0.15);
+    }
+
+    .has-dropdown:hover .dropdown-menu,
+    .has-dropdown:focus-within .dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transform: translateX(-50%) translateY(6px);
+    }
+
+    .dropdown-menu li {
+      margin: 0;
+      width: 100%;
+    }
+
+    .dropdown-menu a {
+      display: block !important;
+      padding: 10px 16px !important;
+      color: var(--dark) !important;
+      font-size: 14.5px !important;
+      font-weight: 600 !important;
+      border-radius: 8px;
+      transition: all .2s ease !important;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .dropdown-menu a::after {
+      display: none !important;
+    }
+
+    .dropdown-menu a:hover {
+      background: #EBF4F7 !important;
+      color: #FC8C4C !important;
+      padding-left: 20px !important;
+    }
+  </style>
+</head>
+
+<body>
+  <header id="header">
+    <nav class="container nav">
+      <a href="index.html" class="logo" aria-label="CLEANSCOPE SERVICES Home">
+        <img src="cleanscope.png" alt="CLEANSCOPE SERVICES" class="logo-img">
+      </a>
+      <ul class="menu" id="menu">
+        <li class="menu-close-wrap">
+          <span class="menu-drawer-title"></span>
+          <button class="menu-close" id="menuClose" aria-label="Close menu">&times;</button>
+        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li class="has-dropdown">
+          <a href="index.html#services" class="dropdown-toggle">Services <svg class="chevron" viewBox="0 0 24 24"
+              width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+              stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg></a>
+          <ul class="dropdown-menu">
+            <li><a href="aged-care.html">Aged Care Cleaning</a></li>
+            <li><a href="hospitality.html">Hospitality Cleaning</a></li>
+            <li><a href="commercial.html">Commercial Spaces Cleaning</a></li>
+            <li><a href="industrial.html">Industrial Cleaning</a></li>
+            <li><a href="strata.html">Strata Cleaning</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="menu-cta-wrap"><a href="request-a-quote.html" class="btn btn-primary nav-cta">Request a Quote</a>
+        </li>
+      </ul>
+      <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </nav>
+  </header>
+  <div class="menu-backdrop" id="menuBackdrop"></div>
+
+  <!-- HERO BANNER -->
+  <div class="page-banner">
+    <div class="container">
+      <span class="tagline">Industrial Cleaning</span>
+      <h1>Built for <span>Demanding</span><br>Environments</h1>
+      <p>Professional industrial cleaning for warehouses, manufacturing facilities, production sites, logistics
+        operations, workshops and other high-demand environments designed around your operations.</p>
+      <div class="banner-btns">
+        <a href="request-a-quote.html" class="btn btn-primary">Request a Quote</a>
+        <a href="#services" class="btn btn-outline-light">View Services ↓</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- STATS BAR -->
+  <div class="stats-bar">
+    <div class="container stats-inner" style="max-width:600px;margin:0 auto;">
+      <div class="stat-item"><strong>20+</strong><span>Years Experience</span></div>
+      <div class="stat-item"><strong>100%</strong><span>Safety Focused</span></div>
+    </div>
+  </div>
+
+  <!-- INTRO -->
+  <section class="intro-section">
+    <div class="container intro-wrap">
+      <div class="intro-text reveal">
+        <span class="tagline">Our Industrial Expertise</span>
+        <h2>More Than Routine Cleaning Built for Industrial Operations</h2>
+        <p>Industrial environments require more than routine cleaning. Safety, hygiene, productivity and compliance all
+          depend on maintaining a clean and well-managed workplace.</p>
+        <p>At CleanScope Services, we provide professional industrial cleaning solutions for warehouses, manufacturing
+          facilities, production sites, logistics operations, workshops and other demanding environments.</p>
+        <p>Our experienced team understands the challenges of high-traffic workplaces and delivers cleaning programs
+          designed around your operations with minimal disruption and maximum results.</p>
+        <a href="contact.html" class="btn btn-primary" style="margin-top:10px">Talk to Our Team →</a>
+      </div>
+      <div class="intro-img reveal">
+        <img src="img/industrialmainpage.png" alt="Industrial cleaning in a warehouse facility">
+        <div class="img-badge">
+          <strong>Safety</strong>
+          <span>First Always</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SAFETY SECTION -->
+  <section class="safety-section">
+    <div class="container safety-wrap">
+      <div class="safety-text reveal">
+        <span class="tagline">Cleaning That Supports Safer Operations</span>
+        <h2>Reducing Hazards. Supporting Compliance. Improving Productivity.</h2>
+        <p>Dust, grease, debris and accumulated waste can create hazards, affect equipment performance and impact
+          workplace standards. Our industrial cleaning services help maintain a safer, cleaner and more efficient
+          working environment while supporting your operational and compliance requirements.</p>
+        <div class="safety-points">
+          <div class="safety-point">
+            <div class="sp-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6l8-4z" />
+              </svg>
+            </div>
+            <div>
+              <h4>Workplace Safety</h4>
+              <p>Clean floors, clear pathways and hazard-free surfaces reduce workplace incidents and keep your team
+                safe.</p>
+            </div>
+          </div>
+          <div class="safety-point">
+            <div class="sp-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <path d="M22 4L12 14.01l-3-3" />
+              </svg>
+            </div>
+            <div>
+              <h4>Compliance Support</h4>
+              <p>We help facilities maintain hygiene and cleanliness standards required by industry regulations and
+                audits.</p>
+            </div>
+          </div>
+          <div class="safety-point">
+            <div class="sp-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M2 20h20M4 20V9l5 3V9l5 3V4l6 4v12" />
+              </svg>
+            </div>
+            <div>
+              <h4>Equipment Performance</h4>
+              <p>Regular degreasing and cleaning of machinery and production areas helps protect equipment and extend
+                its life.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="safety-img reveal">
+        <img src="img/industrial2.png" alt="Industrial floor scrubbing and safety cleaning standards">
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="services-wrap">
+        <div class="services-text reveal">
+          <span class="tagline">Our Industrial Services</span>
+          <h2>Comprehensive Industrial Cleaning Tailored to Your Facility</h2>
+          <p>Our services can be tailored to your facility and may include everything from floor maintenance and
+            machinery degreasing to specialist cleaning requirements. Every program is built around your site, your
+            schedule and your compliance needs.</p>
+          <div class="highlight-cards" style="margin-top:30px">
+            <div class="h-card">
+              <h4>Floor Care</h4>
+              <p>Scrubbing, stripping, polishing and high-pressure treatment for all industrial floor types.</p>
+            </div>
+            <div class="h-card">
+              <h4>Machinery Cleaning</h4>
+              <p>Degreasing and maintenance cleaning to protect equipment performance and longevity.</p>
+            </div>
+            <div class="h-card">
+              <h4>Specialist Services</h4>
+              <p>Food production hygiene, high-level cleaning and specialist environment requirements.</p>
+            </div>
+            <div class="h-card">
+              <h4>Scheduled Programs</h4>
+              <p>Ongoing, periodic or deep cleaning programs planned around your operational hours.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="checklist-box reveal">
+          <h3>Our Industrial Cleaning Scope</h3>
+          <p class="sub">Services we can include in your tailored program:</p>
+          <ul>
+            <li>Industrial floor cleaning and maintenance</li>
+            <li>Floor stripping and polishing</li>
+            <li>Machinery and equipment degreasing</li>
+            <li>Hard surface and grout cleaning</li>
+            <li>High-pressure cleaning</li>
+            <li>Warehouse and production-area cleaning</li>
+            <li>Walls, ceilings and roof-area cleaning</li>
+            <li>Car park and external-area cleaning</li>
+            <li>Waste and rubbish removal</li>
+            <li>Staff amenities, kitchens and bathrooms</li>
+            <li>Food production and hygiene-focused cleaning</li>
+            <li>Specialist cleaning requirements</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TAILORED TO YOUR SITE -->
+  <section class="tailored-section">
+    <div class="container tailored-wrap">
+      <div class="tailored-text reveal">
+        <span class="tagline">Tailored to Your Site</span>
+        <h2>A Cleaning Program Built Around Your Operation</h2>
+        <p>Every industrial facility operates differently. We work with your team to understand your site requirements,
+          operating schedules, safety procedures and cleaning standards then develop a practical cleaning program that
+          fits your operation.</p>
+        <p>Our teams are trained to work safely in operational environments, with a strong focus on attention to detail,
+          workplace safety, consistency and responsible service delivery.</p>
+        <div class="process-steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div>
+              <h4>Site Assessment</h4>
+              <p>We visit your facility to understand the layout, hazards, scheduling constraints and cleaning
+                priorities.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div>
+              <h4>Custom Program Design</h4>
+              <p>We develop a tailored cleaning scope, frequency and method plan aligned with your operational
+                requirements.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <div>
+              <h4>Trained Team Deployment</h4>
+              <p>Experienced cleaners who understand industrial safety protocols are assigned to your site.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">4</div>
+            <div>
+              <h4>Ongoing Quality Assurance</h4>
+              <p>Regular checks and open communication ensure standards are maintained and adjusted as your needs
+                evolve.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tailored-img reveal">
+        <img src="img/industrial3.png" alt="Industrial logistics and warehouse operations cleaning">
+      </div>
+    </div>
+  </section>
+
+  <!-- PROFESSIONAL PEOPLE -->
+  <section class="pro-section">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="tagline">Professional People. Reliable Results.</span>
+        <h2>Industrial Cleaning Built Around Your Operation</h2>
+        <p>At CleanScope Services, we believe effective industrial cleaning starts with well-trained people and clear
+          processes. Our team works collaboratively with site management and follows agreed procedures to deliver
+          reliable results with minimal disruption.</p>
+      </div>
+      <div class="pro-grid">
+        <div class="pro-card reveal">
+          <div class="pro-num">01</div>
+          <h3>Ongoing Cleaning</h3>
+          <p>Scheduled daily, weekly or custom-frequency cleaning programs that keep your facility consistently clean
+            without disrupting operations.</p>
+        </div>
+        <div class="pro-card reveal">
+          <div class="pro-num">02</div>
+          <h3>Scheduled Maintenance</h3>
+          <p>Periodic deep cleaning, floor maintenance and specialised services planned around your shutdown periods or
+            quiet operational windows.</p>
+        </div>
+        <div class="pro-card reveal">
+          <div class="pro-num">03</div>
+          <h3>Deep Cleaning</h3>
+          <p>Thorough, intensive cleans for production areas, machinery, high-level surfaces and hard-to-reach spaces
+            requiring specialist attention.</p>
+        </div>
+        <div class="pro-card reveal">
+          <div class="pro-num">04</div>
+          <h3>Specialised Services</h3>
+          <p>Food production hygiene, post-construction cleans, hazardous material area cleaning and other specialist
+            industrial requirements.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-inner reveal">
+        <span class="tagline" style="background:rgba(255,255,255,.12);color:#fff">Get In Touch</span>
+        <p class="sub-line">Industrial Cleaning Built Around Your Operation</p>
+        <h2>Keeping Your Facility Clean, Safe and Welcoming</h2>
+        <p>Whether you require ongoing cleaning, scheduled maintenance, deep cleaning or specialised services,
+          CleanScope Services provides a flexible solution designed to keep your facility running efficiently. Trusted
+          Cleaning. Complete Care.</p>
+        <div class="cta-btns">
+          <a href="request-a-quote.html" class="btn btn-primary">Request a Custom Proposal</a>
+          <a href="contact.html" class="btn btn-outline-light">Talk to Our Team →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container f-grid">
+      <div>
+        <div class="logo">
+          <a href="index.html" style="display:inline-block;text-decoration:none;" aria-label="CLEANSCOPE SERVICES Home">
+            <img src="cleanscope.png" alt="CLEANSCOPE SERVICES" class="logo-img footer-logo-img">
+          </a>
+        </div>
+        <p>Tailored cleaning solutions for aged care, hospitality, commercial, industrial and strata
+          environments delivered with quality, consistency and care.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="request-a-quote.html">Request a Quote</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="aged-care.html">Aged Care Cleaning</a></li>
+          <li><a href="hospitality.html">Hospitality Cleaning</a></li>
+          <li><a href="commercial.html">Commercial Cleaning</a></li>
+          <li><a href="industrial.html">Industrial Cleaning</a></li>
+          <li><a href="strata.html">Strata Cleaning</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact Info</h4>
+        <ul>
+          <li>📞 <a href="tel:0430090734" style="color:inherit;">0430 090 734</a></li>
+          <li>✉️ <a href="mailto:info@cleanscopeservices.com.au"
+              style="color:inherit;">info@cleanscopeservices.com.au</a></li>
+          <li>📍 Australia Wide Service</li>
+          <li>⏰ Mon – Sun: 24/7 Operations</li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <div class="container">
+        &copy; <span id="year"></span> CleanScope Services. All Rights Reserved. Built with care.
+      </div>
+    </div>
+  </footer>
+
+  <button id="top" aria-label="Back to top">↑</button>
+
+  <script>
+    const header = document.getElementById('header');
+    const topBtn = document.getElementById('top');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 60);
+      topBtn.classList.toggle('show', window.scrollY > 400);
+    });
+    topBtn.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    const burger = document.getElementById('burger');
+    const menu = document.getElementById('menu');
+    const menuClose = document.getElementById('menuClose');
+    const menuBackdrop = document.getElementById('menuBackdrop');
+
+    function toggleMenu(open) {
+      const isOpen = open !== undefined ? open : !menu.classList.contains('open');
+      menu.classList.toggle('open', isOpen);
+      burger.classList.toggle('open', isOpen);
+      if (menuBackdrop) menuBackdrop.classList.toggle('open', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    }
+
+    burger.addEventListener('click', () => toggleMenu());
+    if (menuClose) menuClose.addEventListener('click', () => toggleMenu(false));
+    if (menuBackdrop) menuBackdrop.addEventListener('click', () => toggleMenu(false));
+    menu.querySelectorAll('a:not(.dropdown-toggle)').forEach(link => {
+      link.addEventListener('click', () => toggleMenu(false));
+    });
+
+    // Mobile Dropdown
+    const dropdownToggle = document.querySelector('.dropdown-toggle');
+    const hasDropdown = document.querySelector('.has-dropdown');
+    if (dropdownToggle && hasDropdown) {
+      dropdownToggle.addEventListener('click', (e) => {
+        if (window.innerWidth <= 991) {
+          e.preventDefault();
+          hasDropdown.classList.toggle('open');
+        }
+      });
+    }
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          setTimeout(() => e.target.classList.add('in'), i * 80);
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>

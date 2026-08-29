@@ -1,0 +1,1930 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hospitality Cleaning Services | CleanScope Services</title>
+  <meta name="description"
+    content="CleanScope Services delivers reliable hospitality cleaning for hotels, restaurants, pubs, clubs and event venues tailored to your operations and guest standards." />
+  <style>
+    :root {
+      --primary: #198AA6;
+      --primary-dark: #0E5B6E;
+      --accent: #FC8C4C;
+      --dark: #0e2230;
+      --gray: #5c6b78;
+      --light: #EBF4F7;
+      --white: #ffffff;
+      --radius: 14px;
+      --shadow: 0 10px 30px rgba(14, 34, 48, .08);
+      --shadow-lg: 0 22px 50px rgba(14, 34, 48, .16);
+      --max: 1180px;
+      --font: 'Segoe UI', system-ui, -apple-system, Roboto, Arial, sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 80px
+    }
+
+    body {
+      font-family: var(--font);
+      color: var(--dark);
+      line-height: 1.75;
+      background: var(--light);
+      overflow-x: hidden
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+      height: auto
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit
+    }
+
+    ul {
+      list-style: none
+    }
+
+    .container {
+      width: 92%;
+      max-width: var(--max);
+      margin: auto
+    }
+
+    section {
+      padding: 90px 0
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 32px;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 15px;
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: .35s;
+      letter-spacing: .3px
+    }
+
+    .btn-primary {
+      background: #FC8C4C;
+      color: #fff;
+      box-shadow: 0 8px 20px rgba(252, 140, 76, .35);
+    }
+
+    .btn-primary:hover {
+      background: #E06F2D;
+      color: #fff !important;
+      transform: translateY(-3px);
+      box-shadow: 0 14px 28px rgba(252, 140, 76, .45);
+    }
+
+    .btn-outline-light {
+      border-color: #fff;
+      color: #fff
+    }
+
+    .btn-outline-light:hover {
+      background: #FC8C4C;
+      border-color: #FC8C4C;
+      color: #fff;
+      box-shadow: 0 10px 24px rgba(252, 140, 76, .35);
+    }
+
+    .tagline {
+      display: inline-block;
+      background: rgba(25, 138, 166, .12);
+      color: var(--primary);
+      padding: 6px 18px;
+      border-radius: 50px;
+      font-size: 12.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.6px;
+      margin-bottom: 16px
+    }
+
+    .sec-head {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 55px
+    }
+
+    .sec-head h2 {
+      font-size: clamp(28px, 4vw, 42px);
+      line-height: 1.25;
+      margin-bottom: 14px
+    }
+
+    .sec-head p {
+      color: var(--gray);
+      font-size: 16.5px
+    }
+
+    /* HEADER */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      padding: 16px 0;
+      transition: .4s;
+      background: transparent
+    }
+
+    header.scrolled {
+      background: #fff;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, .09);
+      padding: 10px 0
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      color: #fff;
+      transition: .4s;
+      text-decoration: none;
+    }
+
+    .logo-img {
+      height: 70px;
+      width: 150x;
+      object-fit: contain;
+      display: block;
+      background: transparent !important;
+      padding: 0 !important;
+      border: none !important;
+      border-radius: 0 !important;
+      box-shadow: none !important;
+      transition: all .3s ease;
+    }
+
+    header.scrolled .logo-img {
+      height: 70px;
+      width: 150x;
+      background: transparent !important;
+      padding: 0 !important;
+      box-shadow: none !important;
+    }
+
+    .footer-logo-img {
+      height: 46px;
+      margin-bottom: 18px;
+      background: transparent !important;
+      padding: 0 !important;
+      border: none !important;
+      box-shadow: none !important;
+    }
+
+    .logo-mark {
+      width: 52px;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      background: transparent;
+    }
+
+    .logo-mark svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+      filter: drop-shadow(0 2px 8px rgba(25, 138, 166, .28));
+    }
+
+    .logo-txt {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.05;
+    }
+
+    .logo-txt strong {
+      display: block;
+      font-size: 29px;
+      font-weight: 900;
+      letter-spacing: 1px;
+      color: #ffffff;
+      transition: color .4s;
+    }
+
+    .logo-txt strong .accent-a {
+      color: #FC8C4C;
+    }
+
+    .logo-txt small {
+      display: block;
+      font-size: 12.5px;
+      letter-spacing: 4.5px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #e0f2f7;
+      margin-top: 3px;
+      transition: color .4s;
+    }
+
+    header.scrolled .logo-txt strong {
+      color: var(--dark);
+    }
+
+    header.scrolled .logo-txt small {
+      color: var(--primary);
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      gap: 30px
+    }
+
+    .menu a {
+      color: #fff;
+      font-weight: 500;
+      font-size: 15.5px;
+      position: relative;
+      transition: .3s
+    }
+
+    header.scrolled .menu a {
+      color: var(--dark)
+    }
+
+    .menu a::after {
+      content: '';
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--primary);
+      transition: .3s
+    }
+
+    .menu a:hover::after,
+    .menu a.active::after {
+      width: 100%
+    }
+
+    .menu a:hover {
+      color: var(--primary)
+    }
+
+    .nav-cta {
+      padding: 11px 26px !important;
+      font-size: 14px !important;
+      color: #fff !important
+    }
+
+    .nav-cta::after {
+      display: none !important
+    }
+
+    .menu-close-wrap {
+      display: none;
+    }
+
+    .menu-backdrop {
+      display: none;
+    }
+
+    .burger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: 0;
+      padding: 6px
+    }
+
+    .burger span {
+      width: 26px;
+      height: 3px;
+      background: #fff;
+      border-radius: 3px;
+      transition: .3s
+    }
+
+    header.scrolled .burger span {
+      background: var(--dark)
+    }
+
+    .burger.open span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg)
+    }
+
+    .burger.open span:nth-child(2) {
+      opacity: 0
+    }
+
+    .burger.open span:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg)
+    }
+
+    /* BANNER */
+    .page-banner {
+      background: linear-gradient(100deg, rgba(14, 60, 75, .93), rgba(25, 138, 166, .82)), url('img/hospitalmainpage.png') center/cover;
+      padding: 170px 0 90px;
+      color: #fff
+    }
+
+    .page-banner .tagline {
+      background: rgba(255, 255, 255, 0.217);
+      color: #fff;
+      backdrop-filter: blur(4px)
+    }
+
+    .page-banner h1 {
+      font-size: clamp(34px, 5vw, 58px);
+      font-weight: 800;
+      line-height: 1.12;
+      margin-bottom: 16px
+    }
+
+    .page-banner h1 span {
+      background: linear-gradient(90deg, var(--accent), #FC8C4C);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent
+    }
+
+    .page-banner p {
+      font-size: 17.5px;
+      color: #dbe5ea;
+      max-width: 680px;
+      margin-bottom: 32px
+    }
+
+    .banner-btns {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap
+    }
+
+    /* VENUE TYPES BAR */
+    .venue-bar {
+      background: #198AA6;
+      padding: 32px 0
+    }
+
+    .venue-track {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 14px 28px
+    }
+
+    .venue-pill {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      background: rgba(255, 255, 255, .15);
+      border: 1px solid rgba(255, 255, 255, .28);
+      border-radius: 50px;
+      padding: 10px 20px;
+      color: #fff;
+      font-size: 13.5px;
+      font-weight: 600;
+      letter-spacing: .4px;
+      transition: .3s
+    }
+
+    .venue-pill:hover {
+      background: rgba(255, 255, 255, .28);
+      border-color: #fff;
+      color: #fff
+    }
+
+    .venue-pill svg {
+      width: 16px;
+      height: 16px;
+      color: #FC8C4C;
+      flex-shrink: 0
+    }
+
+    /* INTRO */
+    .intro-section {
+      background: #fff
+    }
+
+    .intro-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center
+    }
+
+    .intro-text h2 {
+      font-size: clamp(26px, 3.5vw, 38px);
+      font-weight: 800;
+      margin-bottom: 18px;
+      line-height: 1.22
+    }
+
+    .intro-text p {
+      color: var(--gray);
+      font-size: 16px;
+      margin-bottom: 18px
+    }
+
+    .intro-img {
+      position: relative
+    }
+
+    .intro-img img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: var(--shadow-lg)
+    }
+
+    .img-badge {
+      position: absolute;
+      bottom: -22px;
+      left: -18px;
+      background: var(--primary);
+      color: #fff;
+      padding: 22px 28px;
+      border-radius: 16px;
+      box-shadow: var(--shadow-lg);
+      text-align: center
+    }
+
+    .img-badge strong {
+      display: block;
+      font-size: 30px;
+      font-weight: 800;
+      line-height: 1
+    }
+
+    .img-badge span {
+      font-size: 11px;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      opacity: .9;
+      margin-top: 4px;
+      display: block
+    }
+
+    /* KEY PILLARS */
+    .pillars-section {
+      background: var(--light)
+    }
+
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px
+    }
+
+    .pillar-card {
+      background: #fff;
+      border-radius: var(--radius);
+      padding: 36px 28px;
+      box-shadow: var(--shadow);
+      border: 1px solid #e6eff0;
+      transition: .4s;
+      position: relative;
+      overflow: hidden;
+      text-align: center
+    }
+
+    .pillar-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+      transform: scaleX(0);
+      transform-origin: center;
+      transition: .4s
+    }
+
+    .pillar-card:hover::after {
+      transform: scaleX(1)
+    }
+
+    .pillar-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-lg)
+    }
+
+    .pillar-icon {
+      width: 68px;
+      height: 68px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, rgba(25, 138, 166, .15), rgba(25, 138, 166, .05));
+      display: grid;
+      place-items: center;
+      color: var(--primary);
+      margin: 0 auto 20px;
+      transition: .4s
+    }
+
+    .pillar-card:hover .pillar-icon {
+      background: var(--primary);
+      color: #fff;
+      transform: scale(1.1)
+    }
+
+    .pillar-icon svg {
+      width: 30px;
+      height: 30px
+    }
+
+    .pillar-card h3 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 10px
+    }
+
+    .pillar-card p {
+      color: var(--gray);
+      font-size: 14.5px;
+      line-height: 1.7
+    }
+
+    /* SERVICES SECTION */
+    .services-section {
+      background: #fff;
+      padding: 90px 0;
+    }
+
+    .services-wrap {
+      max-width: 980px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .services-text h2 {
+      font-size: clamp(26px, 3.5vw, 38px);
+      font-weight: 800;
+      margin-bottom: 16px;
+      line-height: 1.25;
+    }
+
+    .services-text p {
+      color: var(--gray);
+      font-size: 16px;
+      margin-bottom: 32px;
+      max-width: 820px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.7;
+    }
+
+    .service-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      text-align: left;
+    }
+
+    @media (max-width: 768px) {
+      .service-list {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .service-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background: var(--light);
+      border-radius: 14px;
+      padding: 18px 22px;
+      border: 1px solid #dce8ea;
+      transition: .35s;
+    }
+
+    .service-row:hover {
+      background: #fff;
+      border-color: var(--primary);
+      box-shadow: var(--shadow);
+      transform: translateX(6px);
+    }
+
+    .sr-icon {
+      width: 46px;
+      height: 46px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, rgba(25, 138, 166, .15), rgba(25, 138, 166, .05));
+      display: grid;
+      place-items: center;
+      color: var(--primary);
+      flex-shrink: 0;
+      transition: .3s;
+    }
+
+    .service-row:hover .sr-icon {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    .sr-icon svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    .service-row h4 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 3px;
+    }
+
+    .service-row p {
+      color: var(--gray);
+      font-size: 13.5px;
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    /* SCHEDULE SECTION */
+    .schedule-section {
+      background: var(--light);
+    }
+
+    .schedule-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .schedule-img img {
+      width: 100%;
+      height: 440px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .schedule-text h2 {
+      font-size: clamp(24px, 3vw, 34px);
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+
+    .schedule-text p {
+      color: var(--gray);
+      font-size: 16px;
+      margin-bottom: 22px;
+    }
+
+    .schedule-options {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 28px;
+    }
+
+    .sch-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 22px;
+      border: 1px solid #dce8ea;
+      text-align: center;
+      transition: .35s;
+    }
+
+    .sch-card:hover {
+      border-color: var(--primary);
+      box-shadow: var(--shadow);
+      transform: translateY(-4px);
+    }
+
+    .sch-card .sch-num {
+      font-size: 36px;
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+
+    .sch-card h4 {
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .sch-card p {
+      color: var(--gray);
+      font-size: 13px;
+      margin: 0;
+    }
+
+    /* PROMISE SECTION */
+    .promise-section {
+      background: #198AA6;
+      padding: 90px 0;
+    }
+
+    .promise-inner {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 64px;
+      align-items: center;
+    }
+
+    .promise-text h2 {
+      font-size: clamp(26px, 3.5vw, 38px);
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 16px;
+      line-height: 1.22;
+    }
+
+    .promise-text p {
+      color: #e6f4f8;
+      font-size: 16px;
+      margin-bottom: 28px;
+    }
+
+    .promise-points {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .pp {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+
+    .pp-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--accent);
+      flex-shrink: 0;
+      margin-top: 8px;
+    }
+
+    .pp h4 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 4px;
+    }
+
+    .pp p {
+      color: #e6f4f8;
+      font-size: 14.5px;
+      margin: 0;
+    }
+
+    .promise-stats {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .pstat {
+      background: rgba(255, 255, 255, .12);
+      border: 1px solid rgba(255, 255, 255, .22);
+      border-radius: 16px;
+      padding: 34px 28px;
+      text-align: center;
+      transition: .3s;
+    }
+
+    .pstat:hover {
+      background: rgba(255, 255, 255, .22);
+      border-color: rgba(255, 255, 255, .5)
+    }
+
+    .pstat strong {
+      display: block;
+      font-size: 46px;
+      font-weight: 800;
+      color: #fff;
+      line-height: 1;
+      margin-bottom: 8px
+    }
+
+    .pstat span {
+      font-size: 13px;
+      color: #e6f4f8;
+      text-transform: uppercase;
+      letter-spacing: 1.2px
+    }
+
+    /* CTA */
+    .cta-section {
+      background: var(--light);
+      padding: 90px 0
+    }
+
+    .cta-box {
+      background: linear-gradient(135deg, #198AA6 0%, #13748d 50%, #0E5B6E 100%);
+      border-radius: 24px;
+      padding: 70px 60px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 20px 45px rgba(25, 138, 166, .25);
+    }
+
+    .cta-box::before {
+      content: '';
+      position: absolute;
+      top: -80px;
+      left: -80px;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, .08)
+    }
+
+    .cta-box::after {
+      content: '';
+      position: absolute;
+      bottom: -60px;
+      right: -60px;
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      background: rgba(252, 140, 76, .12)
+    }
+
+    .cta-box h2 {
+      font-size: clamp(26px, 4vw, 42px);
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 14px;
+      line-height: 1.2;
+      position: relative
+    }
+
+    .cta-box p {
+      color: #e6f4f8;
+      font-size: 16.5px;
+      max-width: 620px;
+      margin: 0 auto 36px;
+      position: relative
+    }
+
+    .cta-btns {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+      position: relative
+    }
+
+    /* FOOTER */
+    footer {
+      background: #1e2428;
+      color: #a5b6c0;
+      padding: 70px 0 0
+    }
+
+    .f-grid {
+      display: grid;
+      grid-template-columns: 1.7fr 1fr 1.1fr 1.3fr;
+      gap: 40px;
+      padding-bottom: 50px
+    }
+
+    footer h4 {
+      color: #fff;
+      font-size: 17px;
+      margin-bottom: 20px
+    }
+
+    footer li {
+      margin-bottom: 11px;
+      font-size: 15px
+    }
+
+    footer li a:hover {
+      color: var(--accent);
+      padding-left: 5px;
+      transition: .3s;
+      display: inline-block
+    }
+
+    footer .logo {
+      color: #fff;
+      margin-bottom: 16px
+    }
+
+    .f-bottom {
+      border-top: 1px solid rgba(255, 255, 255, .1);
+      padding: 22px 0;
+      text-align: center;
+      font-size: 14px
+    }
+
+    .f-bottom span {
+      color: var(--accent)
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(36px);
+      transition: .8s cubic-bezier(.2, .8, .2, 1)
+    }
+
+    .reveal.in {
+      opacity: 1;
+      transform: none
+    }
+
+    @media(max-width:992px) {
+
+      .intro-wrap,
+      .services-wrap,
+      .schedule-wrap,
+      .promise-inner {
+        grid-template-columns: 1fr
+      }
+
+      .intro-img {
+        order: -1
+      }
+
+      .schedule-img {
+        order: -1
+      }
+
+      .services-img {
+        display: none
+      }
+
+      .f-grid {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .promise-stats {
+        grid-template-columns: 1fr 1fr
+      }
+    }
+
+    @media(max-width:768px) {
+      section {
+        padding: 65px 0
+      }
+
+      .burger {
+        display: flex
+      }
+
+      .menu-backdrop {
+        display: block;
+        position: fixed;
+        inset: 0;
+        background: rgba(14, 34, 48, 0.6);
+        backdrop-filter: blur(4px);
+        opacity: 0;
+        visibility: hidden;
+        transition: .35s ease;
+        z-index: 998;
+      }
+
+      .menu-backdrop.open {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 85%;
+        max-width: 320px;
+        height: 100vh;
+        background: #fff;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        gap: 2px;
+        padding: 24px 20px 40px;
+        box-shadow: -10px 0 35px rgba(0, 0, 0, .2);
+        transition: right .35s cubic-bezier(0.4, 0, 0.2, 1);
+        z-index: 999;
+        overflow-y: auto;
+      }
+
+      .menu.open {
+        right: 0;
+      }
+
+      .menu-close-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding-bottom: 16px;
+        margin-bottom: 12px;
+        border-bottom: 1px solid #eef3f4;
+      }
+
+      .menu-drawer-title {
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        color: var(--primary);
+      }
+
+      .menu-close {
+        background: #f0f6f6;
+        border: none;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        font-size: 24px;
+        line-height: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        color: var(--dark);
+        transition: .25s;
+      }
+
+      .menu-close:hover {
+        background: var(--primary);
+        color: #fff;
+      }
+
+      .menu a:not(.nav-cta) {
+        color: var(--dark) !important;
+        width: 100%;
+        padding: 13px 14px;
+        border-radius: 8px;
+        border-bottom: 1px solid #f2f6f7;
+        font-size: 16px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        transition: .2s;
+      }
+
+      .menu a::after {
+        display: none !important;
+      }
+
+      .menu a:not(.nav-cta):hover {
+        background: #f4fafb;
+        color: #FC8C4C !important;
+      }
+
+      .menu a:not(.nav-cta).active {
+        color: var(--primary) !important;
+        background: rgba(25, 138, 166, 0.08);
+        font-weight: 700;
+      }
+
+      .menu .menu-cta-wrap {
+        margin-top: 18px;
+        width: 100%;
+      }
+
+      .menu a.nav-cta,
+      .menu .nav-cta {
+        background: #FC8C4C !important;
+        color: #ffffff !important;
+        border: none !important;
+        border-bottom: none !important;
+        width: 100% !important;
+        text-align: center !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding: 14px 24px !important;
+        border-radius: 50px !important;
+        font-size: 15px !important;
+        font-weight: 700 !important;
+        box-shadow: 0 6px 18px rgba(252, 140, 76, .35) !important;
+        transition: .3s !important;
+      }
+
+      .menu a.nav-cta:hover,
+      .menu .nav-cta:hover {
+        background: #E06F2D !important;
+        color: #ffffff !important;
+        box-shadow: 0 10px 24px rgba(252, 140, 76, .48) !important;
+        transform: translateY(-2px);
+      }
+
+      .f-grid {
+        grid-template-columns: 1fr;
+        gap: 30px
+      }
+
+      .logo-img {
+        height: 38px;
+        padding: 0 !important;
+        background: transparent !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+      }
+
+      header.scrolled .logo-img {
+        height: 35px;
+        padding: 0 !important;
+        background: transparent !important;
+        box-shadow: none !important;
+      }
+
+      .img-badge {
+        left: 10px
+      }
+
+      .schedule-options {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .cta-box {
+        padding: 44px 24px
+      }
+
+      .promise-stats {
+        grid-template-columns: 1fr 1fr
+      }
+    }
+
+    @media(max-width:480px) {
+      .schedule-options {
+        grid-template-columns: 1fr
+      }
+
+      .promise-stats {
+        grid-template-columns: 1fr
+      }
+    }
+
+    /* BOTTOM INQUIRY SECTION */
+    .inquiry-section {
+      background: var(--light);
+      padding: 90px 0;
+      position: relative;
+    }
+
+    .inquiry-card {
+      background: #fff;
+      border-radius: 24px;
+      box-shadow: var(--shadow-lg);
+      border: 1px solid rgba(25, 138, 166, 0.15);
+      padding: 50px 48px;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .inquiry-header {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 40px;
+    }
+
+    .inquiry-header h2 {
+      font-size: clamp(26px, 3.5vw, 36px);
+      font-weight: 800;
+      color: var(--dark);
+      margin: 12px 0 10px;
+    }
+
+    .inquiry-header p {
+      color: var(--gray);
+      font-size: 15.5px;
+      line-height: 1.6;
+    }
+
+    .inquiry-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .inquiry-group {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .inquiry-group.full-width {
+      grid-column: 1 / -1;
+    }
+
+    .inquiry-group label {
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--dark);
+      letter-spacing: .3px;
+    }
+
+    .inquiry-group label span {
+      color: var(--accent);
+    }
+
+    .inquiry-group input,
+    .inquiry-group select,
+    .inquiry-group textarea {
+      width: 100%;
+      padding: 13px 16px;
+      border: 1.5px solid #dce8ea;
+      border-radius: 10px;
+      font-size: 15px;
+      font-family: var(--font);
+      color: var(--dark);
+      background: #f7fbfc;
+      transition: .3s;
+      outline: none;
+    }
+
+    .inquiry-group input:focus,
+    .inquiry-group select:focus,
+    .inquiry-group textarea:focus {
+      border-color: var(--primary);
+      background: #fff;
+      box-shadow: 0 0 0 4px rgba(25, 138, 166, .12);
+    }
+
+    .inquiry-group textarea {
+      resize: vertical;
+      min-height: 110px;
+    }
+
+    .inquiry-actions {
+      grid-column: 1 / -1;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .inquiry-btn {
+      min-width: 240px;
+      padding: 15px 36px;
+      background: #FC8C4C;
+      color: #fff;
+      border: none;
+      border-radius: 50px;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      letter-spacing: .4px;
+      transition: .35s;
+      box-shadow: 0 8px 20px rgba(252, 140, 76, .35);
+    }
+
+    .inquiry-btn:hover {
+      background: #E06F2D;
+      transform: translateY(-3px);
+      box-shadow: 0 14px 28px rgba(252, 140, 76, .45);
+    }
+
+    .inquiry-success {
+      display: none;
+      background: linear-gradient(135deg, rgba(252, 140, 76, .12), rgba(25, 138, 166, .08));
+      border: 1.5px solid var(--accent);
+      border-radius: 14px;
+      padding: 24px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .inquiry-success h4 {
+      color: var(--primary-dark);
+      font-size: 19px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .inquiry-success p {
+      color: var(--gray);
+      font-size: 15px;
+    }
+
+    @media (max-width: 768px) {
+      .inquiry-card {
+        padding: 36px 20px;
+      }
+
+      .inquiry-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .inquiry-btn {
+        width: 100%;
+      }
+    }
+
+
+    /* SERVICES DROPDOWN */
+    .has-dropdown {
+      position: relative;
+    }
+
+    .dropdown-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+    }
+
+    .dropdown-toggle .chevron {
+      transition: transform .3s ease;
+    }
+
+    .has-dropdown:hover .dropdown-toggle .chevron {
+      transform: rotate(180deg);
+    }
+
+    .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%) translateY(14px);
+      background: #ffffff;
+      min-width: 250px;
+      padding: 10px 8px;
+      border-radius: 14px;
+      box-shadow: 0 16px 40px rgba(14, 34, 48, 0.18);
+      border: 1px solid rgba(25, 138, 166, 0.15);
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: all .25s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 1100;
+      list-style: none;
+    }
+
+    .dropdown-menu::before {
+      content: '';
+      position: absolute;
+      top: -6px;
+      left: 50%;
+      transform: translateX(-50%) rotate(45deg);
+      width: 12px;
+      height: 12px;
+      background: #ffffff;
+      border-left: 1px solid rgba(25, 138, 166, 0.15);
+      border-top: 1px solid rgba(25, 138, 166, 0.15);
+    }
+
+    .has-dropdown:hover .dropdown-menu,
+    .has-dropdown:focus-within .dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transform: translateX(-50%) translateY(6px);
+    }
+
+    .dropdown-menu li {
+      margin: 0;
+      width: 100%;
+    }
+
+    .dropdown-menu a {
+      display: block !important;
+      padding: 10px 16px !important;
+      color: var(--dark) !important;
+      font-size: 14.5px !important;
+      font-weight: 600 !important;
+      border-radius: 8px;
+      transition: all .2s ease !important;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .dropdown-menu a::after {
+      display: none !important;
+    }
+
+    .dropdown-menu a:hover {
+      background: #EBF4F7 !important;
+      color: #FC8C4C !important;
+      padding-left: 20px !important;
+    }
+  </style>
+</head>
+
+<body>
+  <header id="header">
+    <nav class="container nav">
+      <a href="index.html" class="logo" aria-label="CLEANSCOPE SERVICES Home">
+        <img src="cleanscope.png" alt="CLEANSCOPE SERVICES" class="logo-img">
+      </a>
+      <ul class="menu" id="menu">
+        <li class="menu-close-wrap">
+          <span class="menu-drawer-title"></span>
+          <button class="menu-close" id="menuClose" aria-label="Close menu">&times;</button>
+        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li class="has-dropdown">
+          <a href="index.html#services" class="dropdown-toggle">Services <svg class="chevron" viewBox="0 0 24 24"
+              width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+              stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg></a>
+          <ul class="dropdown-menu">
+            <li><a href="aged-care.html">Aged Care Cleaning</a></li>
+            <li><a href="hospitality.html">Hospitality Cleaning</a></li>
+            <li><a href="commercial.html">Commercial Spaces Cleaning</a></li>
+            <li><a href="industrial.html">Industrial Cleaning</a></li>
+            <li><a href="strata.html">Strata Cleaning</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="menu-cta-wrap"><a href="request-a-quote.html" class="btn btn-primary nav-cta">Request a Quote</a>
+        </li>
+      </ul>
+      <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </nav>
+  </header>
+  <div class="menu-backdrop" id="menuBackdrop"></div>
+
+  <!-- HERO BANNER -->
+  <div class="page-banner">
+    <div class="container">
+      <span class="tagline">Hospitality Cleaning</span>
+      <h1>Creating Cleaner Spaces for<br><span>Better Guest Experiences</span></h1>
+      <p>In hospitality, cleanliness and presentation matter. We deliver reliable, tailored cleaning designed around
+        your operations, guest expectations and service standards.</p>
+      <div class="banner-btns">
+        <a href="request-a-quote.html" class="btn btn-primary">Request a Quote</a>
+        <a href="#services" class="btn btn-outline-light">View Services ↓</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- VENUE TYPES BAR -->
+  <div class="venue-bar">
+    <div class="container venue-track">
+      <span class="venue-pill">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 21h18M4 21V10h16v11" />
+          <path d="M8 10V6a4 4 0 0 1 8 0v4" />
+        </svg>Hotels
+      </span>
+      <span class="venue-pill">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 21h18M5 21V7l7-4 7 4v14" />
+        </svg>Serviced Apartments
+      </span>
+      <span class="venue-pill">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 8h1a4 4 0 0 1 0 8h-1" />
+          <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" />
+        </svg>Restaurants &amp; Cafés
+      </span>
+      <span class="venue-pill">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10" />
+          <path d="M8 14s1.5 2 4 2 4-2 4-2" />
+          <line x1="9" y1="9" x2="9.01" y2="9" />
+          <line x1="15" y1="9" x2="15.01" y2="9" />
+        </svg>Pubs &amp; Clubs
+      </span>
+      <span class="venue-pill">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="3" y="3" width="18" height="18" rx="2" />
+          <path d="M3 9h18M9 21V9" />
+        </svg>Event Venues
+      </span>
+      <span class="venue-pill">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M17 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+          <circle cx="9.5" cy="7" r="4" />
+        </svg>Entertainment Spaces
+      </span>
+    </div>
+  </div>
+
+  <!-- INTRO -->
+  <section class="intro-section">
+    <div class="container intro-wrap">
+      <div class="intro-text reveal">
+        <span class="tagline">Cleaning Built for Hospitality</span>
+        <h2>Reliable Cleaning That Matches Your Guest Standards</h2>
+        <p>From hotels and restaurants to pubs, clubs and event venues, guests expect a clean, fresh and welcoming
+          environment. CleanScope Services provides reliable, tailored hospitality cleaning designed around your
+          operations, guest expectations and service standards.</p>
+        <p>Our experienced teams understand the pace of hospitality and deliver consistent cleaning, professional
+          presentation and flexible support across guest areas, accommodation, dining spaces, public areas and
+          back-of-house operations.</p>
+        <p>We work around your schedule and operational needs helping your team maintain a clean, safe and welcoming
+          environment while you focus on delivering an exceptional guest experience.</p>
+        <a href="contact.html" class="btn btn-primary" style="margin-top:10px">Talk to Our Team →</a>
+      </div>
+      <div class="intro-img reveal">
+        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=900&q=80"
+          alt="CleanScope hospitality cleaning services">
+        <div class="img-badge">
+          <strong>5★</strong>
+          <span>Guest Standard</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KEY PILLARS -->
+  <section class="pillars-section">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="tagline">Our Hospitality Approach</span>
+        <h2>Cleaning That Works Around Your Operations</h2>
+        <p>We understand hospitality never stops. Our flexible, guest-focused approach keeps every area of your property
+          looking its best at all times.</p>
+      </div>
+      <div class="pillars-grid">
+        <div class="pillar-card reveal">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="12 6 12 12 16 14" />
+            </svg>
+          </div>
+          <h3>Flexible Scheduling</h3>
+          <p>Cleaning programs built around your service times, check-in and check-out cycles and peak periods.</p>
+        </div>
+        <div class="pillar-card reveal">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+              <path d="M22 4L12 14.01l-3-3" />
+            </svg>
+          </div>
+          <h3>Consistent Presentation</h3>
+          <p>The same high standard of cleanliness and presentation every visit no surprises for guests or
+            management.
+          </p>
+        </div>
+        <div class="pillar-card reveal">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+              <circle cx="9.5" cy="7" r="4" />
+              <path d="M19 8v6M22 11h-6" />
+            </svg>
+          </div>
+          <h3>Experienced Teams</h3>
+          <p>Trained hospitality cleaning professionals who understand guest environments, discretion and pace.</p>
+        </div>
+        <div class="pillar-card reveal">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6l8-4z" />
+            </svg>
+          </div>
+          <h3>Guest Safety Focus</h3>
+          <p>Hygienic cleaning of high-touch and high-traffic areas to protect guest health and property reputation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES LIST -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="services-wrap">
+        <div class="services-text reveal">
+          <span class="tagline">Our Hospitality Services</span>
+          <h2>Covering Every Area of Your Property</h2>
+          <p>Our hospitality cleaning services can be tailored to cover the full spectrum of your property from
+            guest-facing spaces to back-of-house areas. We work with your management team to build a cleaning program
+            that fits your operations.</p>
+          <div class="service-list" style="margin-top:24px">
+            <div class="service-row">
+              <div class="sr-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                  <path d="M3 21h18M4 21V10h16v11" />
+                  <path d="M8 10V6a4 4 0 0 1 8 0v4" />
+                </svg>
+              </div>
+              <div>
+                <h4>Hotels &amp; Serviced Apartments</h4>
+                <p>Room turnovers, common areas, lobbies and all guest-facing spaces.</p>
+              </div>
+            </div>
+            <div class="service-row">
+              <div class="sr-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                  <path d="M18 8h1a4 4 0 0 1 0 8h-1" />
+                  <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" />
+                </svg>
+              </div>
+              <div>
+                <h4>Restaurants, Cafés, Pubs &amp; Clubs</h4>
+                <p>Dining areas, bar spaces, kitchens and service areas cleaned to food safety standards.</p>
+              </div>
+            </div>
+            <div class="service-row">
+              <div class="sr-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                  <rect x="3" y="3" width="18" height="18" rx="2" />
+                  <path d="M3 9h18M9 21V9" />
+                </svg>
+              </div>
+              <div>
+                <h4>Event &amp; Entertainment Venues</h4>
+                <p>Pre-event, during and post-event cleaning to maintain presentation throughout.</p>
+              </div>
+            </div>
+            <div class="service-row">
+              <div class="sr-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                  <path d="M3 21h18M5 21V7l7-4 7 4v14" />
+                  <path d="M9 21v-6h6v6" />
+                </svg>
+              </div>
+              <div>
+                <h4>Guest Rooms &amp; Common Areas</h4>
+                <p>Thorough room cleaning and turnovers, corridors, lounges and shared facilities.</p>
+              </div>
+            </div>
+            <div class="service-row">
+              <div class="sr-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                  <path d="M12 2s6 5.5 6 10a6 6 0 0 1-12 0c0-4.5 6-10 6-10z" />
+                </svg>
+              </div>
+              <div>
+                <h4>Bathrooms &amp; High-Traffic Spaces</h4>
+                <p>Frequent sanitisation of guest bathrooms, public amenities and high-touch surfaces.</p>
+              </div>
+            </div>
+            <div class="service-row">
+              <div class="sr-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 16 14" />
+                </svg>
+              </div>
+              <div>
+                <h4>Dining &amp; Back-of-House Areas</h4>
+                <p>Kitchen, food preparation and service areas cleaned to high hygiene standards.</p>
+              </div>
+            </div>
+            <div class="service-row">
+              <div class="sr-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                  <path d="M22 4L12 14.01l-3-3" />
+                </svg>
+              </div>
+              <div>
+                <h4>Deep &amp; Periodic Cleaning</h4>
+                <p>Scheduled intensive cleans for carpets, hard floors, upholstery and specialist areas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCHEDULE FLEXIBILITY -->
+  <section class="schedule-section">
+    <div class="container schedule-wrap">
+      <div class="schedule-img reveal">
+        <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=900&q=80"
+          alt="Hotel room cleaned to perfection">
+      </div>
+      <div class="schedule-text reveal">
+        <span class="tagline">We Work Around You</span>
+        <h2>Cleaning That Fits Your Operational Schedule</h2>
+        <p>We understand hospitality operates around the clock. Our cleaning programs are designed to work within your
+          operational windows from early morning turnovers to late-night services without disrupting your guests
+          or
+          staff.</p>
+        <p>Whether you need daily cleaning, post-event services, or scheduled deep cleans, we build a program that
+          integrates seamlessly into your property's routine.</p>
+        <div class="schedule-options">
+          <div class="sch-card">
+            <div class="sch-num">24/7</div>
+            <h4>Flexible Hours</h4>
+            <p>Early morning, daytime, evening or overnight scheduling available.</p>
+          </div>
+          <div class="sch-card">
+            <div class="sch-num">Fast</div>
+            <h4>Quick Turnovers</h4>
+            <p>Efficient room turnovers that keep your property guest-ready at all times.</p>
+          </div>
+          <div class="sch-card">
+            <div class="sch-num">Deep</div>
+            <h4>Periodic Cleans</h4>
+            <p>Scheduled intensive cleaning programs planned around your quiet periods.</p>
+          </div>
+          <div class="sch-card">
+            <div class="sch-num">100%</div>
+            <h4>Consistent Quality</h4>
+            <p>The same high standard delivered every visit, every time, no exceptions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROMISE / STATS -->
+  <section class="promise-section">
+    <div class="container">
+      <div class="promise-inner">
+        <div class="promise-text reveal">
+          <span class="tagline" style="background:rgba(255,255,255,.12);color:#fff">Our Promise to You</span>
+          <h2>A Cleaning Partner That Understands Hospitality</h2>
+          <p>CleanScope Services is built on reliability, professional standards and a genuine understanding of what
+            hospitality businesses need. We are a partner you can count on every day.</p>
+          <div class="promise-points">
+            <div class="pp">
+              <div class="pp-dot"></div>
+              <div>
+                <h4>Tailored to Your Property</h4>
+                <p>Cleaning scopes and schedules built specifically around your venue type, size and guest expectations.
+                </p>
+              </div>
+            </div>
+            <div class="pp">
+              <div class="pp-dot"></div>
+              <div>
+                <h4>Consistent Standards Every Visit</h4>
+                <p>We deliver the same high-quality result every single time guests and management can always count
+                  on
+                  us.</p>
+              </div>
+            </div>
+            <div class="pp">
+              <div class="pp-dot"></div>
+              <div>
+                <h4>Open Communication</h4>
+                <p>Clear, direct contact with our team responsive to any requests, changes or feedback at all times.
+                </p>
+              </div>
+            </div>
+            <div class="pp">
+              <div class="pp-dot"></div>
+              <div>
+                <h4>Minimal Guest Disruption</h4>
+                <p>Quiet, professional and discreet our team works seamlessly in the background while guests enjoy
+                  their stay.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="promise-stats reveal">
+          <div class="pstat">
+            <strong>20+</strong>
+            <span>Years Combined Experience</span>
+          </div>
+          <div class="pstat">
+            <strong>100%</strong>
+            <span>Quality Focused</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-box reveal">
+        <span class="tagline" style="background:rgba(255,255,255,.1);color:#fff">Get In Touch</span>
+        <h2>Ready to Elevate Your Guest Experience?</h2>
+        <p>CleanScope Services helps hospitality businesses maintain a clean, safe and welcoming environment so your
+          team can focus on delivering an exceptional guest experience. Trusted Cleaning. Complete Care.</p>
+        <div class="cta-btns">
+          <a href="request-a-quote.html" class="btn btn-primary">Request a Custom Proposal</a>
+          <a href="contact.html" class="btn btn-outline-light">Talk to Our Team →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container f-grid">
+      <div>
+        <div class="logo">
+          <a href="index.html" style="display:inline-block;text-decoration:none;" aria-label="CLEANSCOPE SERVICES Home">
+            <img src="cleanscope.png" alt="CLEANSCOPE SERVICES" class="logo-img footer-logo-img">
+          </a>
+        </div>
+        <p>Tailored cleaning solutions for aged care, hospitality, commercial, industrial and strata
+          environments delivered with quality, consistency and care.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="request-a-quote.html">Request a Quote</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="aged-care.html">Aged Care Cleaning</a></li>
+          <li><a href="hospitality.html">Hospitality Cleaning</a></li>
+          <li><a href="commercial.html">Commercial Cleaning</a></li>
+          <li><a href="industrial.html">Industrial Cleaning</a></li>
+          <li><a href="strata.html">Strata Cleaning</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact Info</h4>
+        <ul>
+          <li>📞 <a href="tel:0430090734" style="color:inherit;">0430 090 734</a></li>
+          <li>✉️ <a href="mailto:info@cleanscopeservices.com.au"
+              style="color:inherit;">info@cleanscopeservices.com.au</a></li>
+          <li>📍 Australia Wide Service</li>
+          <li>⏰ Mon – Sun: 24/7 Operations</li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <div class="container">
+        &copy; <span id="year"></span> CleanScope Services. All Rights Reserved. Built with care.
+      </div>
+    </div>
+  </footer>
+
+  <button id="top" aria-label="Back to top">↑</button>
+
+  <script>
+    const header = document.getElementById('header');
+    const topBtn = document.getElementById('top');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 60);
+      topBtn.classList.toggle('show', window.scrollY > 400);
+    });
+    topBtn.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    const burger = document.getElementById('burger');
+    const menu = document.getElementById('menu');
+    const menuClose = document.getElementById('menuClose');
+    const menuBackdrop = document.getElementById('menuBackdrop');
+
+    function toggleMenu(open) {
+      const isOpen = open !== undefined ? open : !menu.classList.contains('open');
+      menu.classList.toggle('open', isOpen);
+      burger.classList.toggle('open', isOpen);
+      if (menuBackdrop) menuBackdrop.classList.toggle('open', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    }
+
+    burger.addEventListener('click', () => toggleMenu());
+    if (menuClose) menuClose.addEventListener('click', () => toggleMenu(false));
+    if (menuBackdrop) menuBackdrop.addEventListener('click', () => toggleMenu(false));
+    menu.querySelectorAll('a:not(.dropdown-toggle)').forEach(link => {
+      link.addEventListener('click', () => toggleMenu(false));
+    });
+
+    // Mobile Dropdown
+    const dropdownToggle = document.querySelector('.dropdown-toggle');
+    const hasDropdown = document.querySelector('.has-dropdown');
+    if (dropdownToggle && hasDropdown) {
+      dropdownToggle.addEventListener('click', (e) => {
+        if (window.innerWidth <= 991) {
+          e.preventDefault();
+          hasDropdown.classList.toggle('open');
+        }
+      });
+    }
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          setTimeout(() => e.target.classList.add('in'), i * 80);
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>

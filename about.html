@@ -1,0 +1,1889 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | CleanScope Services</title>
+  <meta name="description"
+    content="CleanScope Services is an Australian cleaning company with 20+ years of combined experience across aged care, hospitality, commercial, industrial and strata environments." />
+  <style>
+    :root {
+      --primary: #198AA6;
+      --primary-dark: #0E5B6E;
+      --accent: #FC8C4C;
+      --dark: #0e2230;
+      --gray: #5c6b78;
+      --light: #EBF4F7;
+      --white: #ffffff;
+      --radius: 14px;
+      --shadow: 0 10px 30px rgba(14, 34, 48, .08);
+      --shadow-lg: 0 22px 50px rgba(14, 34, 48, .16);
+      --max: 1180px;
+      --font: 'Segoe UI', system-ui, -apple-system, Roboto, Arial, sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 80px
+    }
+
+    body {
+      font-family: var(--font);
+      color: var(--dark);
+      line-height: 1.75;
+      background: var(--light);
+      overflow-x: hidden
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+      height: auto
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit
+    }
+
+    ul {
+      list-style: none
+    }
+
+    .container {
+      width: 92%;
+      max-width: var(--max);
+      margin: auto
+    }
+
+    section {
+      padding: 90px 0
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 32px;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 15px;
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: .35s;
+      letter-spacing: .3px
+    }
+
+    .btn-primary {
+      background: #FC8C4C;
+      color: #fff;
+      box-shadow: 0 8px 20px rgba(252, 140, 76, .35);
+    }
+
+    .btn-primary:hover {
+      background: #E06F2D;
+      color: #fff !important;
+      transform: translateY(-3px);
+      box-shadow: 0 14px 28px rgba(252, 140, 76, .45);
+    }
+
+    .btn-outline-light {
+      border-color: #fff;
+      color: #fff
+    }
+
+    .btn-outline-light:hover {
+      background: #FC8C4C;
+      border-color: #FC8C4C;
+      color: #fff;
+      box-shadow: 0 10px 24px rgba(252, 140, 76, .35);
+    }
+
+    .tagline {
+      display: inline-block;
+      background: rgba(25, 138, 166, .12);
+      color: var(--primary);
+      padding: 6px 18px;
+      border-radius: 50px;
+      font-size: 12.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.6px;
+      margin-bottom: 16px
+    }
+
+    .sec-head {
+      text-align: center;
+      max-width: 740px;
+      margin: 0 auto 55px
+    }
+
+    .sec-head h2 {
+      font-size: clamp(28px, 4vw, 42px);
+      line-height: 1.25;
+      margin-bottom: 14px
+    }
+
+    .sec-head p {
+      color: var(--gray);
+      font-size: 16.5px
+    }
+
+    /* HEADER */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      padding: 16px 0;
+      transition: .4s;
+      background: transparent
+    }
+
+    header.scrolled {
+      background: #fff;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, .09);
+      padding: 10px 0
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      color: #fff;
+      transition: .4s;
+      text-decoration: none;
+    }
+
+    .logo-img {
+      height: 70px;
+      width: 150x;
+      object-fit: contain;
+      display: block;
+      background: transparent !important;
+      padding: 0 !important;
+      border: none !important;
+      border-radius: 0 !important;
+      box-shadow: none !important;
+      transition: all .3s ease;
+    }
+
+    header.scrolled .logo-img {
+      height: 70px;
+      width: 150x;
+      background: transparent !important;
+      padding: 0 !important;
+      box-shadow: none !important;
+    }
+
+    .footer-logo-img {
+      height: 46px;
+      margin-bottom: 18px;
+      background: transparent !important;
+      padding: 0 !important;
+      border: none !important;
+      box-shadow: none !important;
+    }
+
+    .logo-mark {
+      width: 52px;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      background: transparent;
+    }
+
+    .logo-mark svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+      filter: drop-shadow(0 2px 8px rgba(25, 138, 166, .28));
+    }
+
+    .logo-txt {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.05;
+    }
+
+    .logo-txt strong {
+      display: block;
+      font-size: 29px;
+      font-weight: 900;
+      letter-spacing: 1px;
+      color: #ffffff;
+      transition: color .4s;
+    }
+
+    .logo-txt strong .accent-a {
+      color: #FC8C4C;
+    }
+
+    .logo-txt small {
+      display: block;
+      font-size: 12.5px;
+      letter-spacing: 4.5px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #e0f2f7;
+      margin-top: 3px;
+      transition: color .4s;
+    }
+
+    header.scrolled .logo-txt strong {
+      color: var(--dark);
+    }
+
+    header.scrolled .logo-txt small {
+      color: var(--primary);
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      gap: 30px
+    }
+
+    .menu a {
+      color: #fff;
+      font-weight: 500;
+      font-size: 15.5px;
+      position: relative;
+      transition: .3s
+    }
+
+    header.scrolled .menu a {
+      color: var(--dark)
+    }
+
+    .menu a::after {
+      content: '';
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--primary);
+      transition: .3s
+    }
+
+    .menu a:hover::after,
+    .menu a.active::after {
+      width: 100%
+    }
+
+    .menu a:hover {
+      color: var(--primary)
+    }
+
+    .nav-cta {
+      padding: 11px 26px !important;
+      font-size: 14px !important;
+      color: #fff !important
+    }
+
+    .nav-cta::after {
+      display: none !important
+    }
+
+    .menu-close-wrap {
+      display: none;
+    }
+
+    .menu-backdrop {
+      display: none;
+    }
+
+    .burger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: 0;
+      padding: 6px
+    }
+
+    .burger span {
+      width: 26px;
+      height: 3px;
+      background: #fff;
+      border-radius: 3px;
+      transition: .3s
+    }
+
+    header.scrolled .burger span {
+      background: var(--dark)
+    }
+
+    .burger.open span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg)
+    }
+
+    .burger.open span:nth-child(2) {
+      opacity: 0
+    }
+
+    .burger.open span:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg)
+    }
+
+    /* BANNER */
+    .page-banner {
+      background: linear-gradient(100deg, rgba(14, 60, 75, .93), rgba(25, 138, 166, .82)), url('img/about-page.png') center/cover;
+      padding: 170px 0 90px;
+      color: #fff
+    }
+
+    .page-banner .tagline {
+      background: rgba(255, 255, 255, .15);
+      color: #fff;
+      backdrop-filter: blur(4px)
+    }
+
+    .page-banner h1 {
+      font-size: clamp(34px, 5vw, 58px);
+      font-weight: 800;
+      line-height: 1.12;
+      margin-bottom: 14px
+    }
+
+    .page-banner h1 span {
+      background: linear-gradient(90deg, var(--accent), #FC8C4C);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent
+    }
+
+    .page-banner p {
+      font-size: 17.5px;
+      color: #dbe5ea;
+      max-width: 700px;
+      margin-bottom: 32px
+    }
+
+    .banner-btns {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap
+    }
+
+    /* STATS STRIP */
+    .stats-strip {
+      background: var(--primary);
+      padding: 0
+    }
+
+    .stats-inner {
+      display: flex;
+      align-items: stretch;
+      flex-wrap: wrap
+    }
+
+    .stat-cell {
+      flex: 1;
+      min-width: 180px;
+      padding: 30px 24px;
+      text-align: center;
+      border-right: 1px solid rgba(255, 255, 255, .18)
+    }
+
+    .stat-cell:last-child {
+      border-right: none
+    }
+
+    .stat-cell strong {
+      display: block;
+      font-size: 40px;
+      font-weight: 800;
+      color: #fff;
+      line-height: 1;
+      margin-bottom: 6px
+    }
+
+    .stat-cell span {
+      font-size: 12.5px;
+      color: rgba(255, 255, 255, .8);
+      text-transform: uppercase;
+      letter-spacing: 1.4px
+    }
+
+    /* WHO WE ARE */
+    .who-section {
+      background: #fff
+    }
+
+    .who-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center
+    }
+
+    .who-text h2 {
+      font-size: clamp(26px, 3.5vw, 38px);
+      font-weight: 800;
+      margin-bottom: 18px;
+      line-height: 1.22
+    }
+
+    .who-text p {
+      color: var(--gray);
+      font-size: 16px;
+      margin-bottom: 18px
+    }
+
+    .who-img {
+      position: relative
+    }
+
+    .who-img img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: var(--shadow-lg)
+    }
+
+    .who-img-badge {
+      position: absolute;
+      bottom: -24px;
+      right: -20px;
+      background: #198AA6;
+      color: #fff;
+      padding: 22px 28px;
+      border-radius: 16px;
+      box-shadow: var(--shadow-lg);
+      text-align: center
+    }
+
+    .who-img-badge strong {
+      display: block;
+      font-size: 32px;
+      font-weight: 800;
+      line-height: 1;
+      color: var(--accent)
+    }
+
+    .who-img-badge span {
+      font-size: 11px;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      opacity: .8;
+      margin-top: 4px;
+      display: block
+    }
+
+    /* EXPERIENCE SECTION */
+    .exp-section {
+      background: var(--light);
+      padding: 90px 0;
+    }
+
+    .exp-wrap {
+      max-width: 880px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .exp-text h2 {
+      font-size: clamp(26px, 3.5vw, 38px);
+      font-weight: 800;
+      margin-bottom: 18px;
+      line-height: 1.25;
+    }
+
+    .exp-text p {
+      color: var(--gray);
+      font-size: 16px;
+      margin-bottom: 18px;
+      line-height: 1.7;
+    }
+
+    .industry-tags {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .ind-tag {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: #fff;
+      border: 1.5px solid #dce8ea;
+      border-radius: 50px;
+      padding: 10px 22px;
+      font-size: 14.5px;
+      font-weight: 600;
+      color: var(--dark);
+      transition: .3s;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, .04);
+    }
+
+    .ind-tag:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+      box-shadow: var(--shadow);
+      transform: translateY(-2px);
+    }
+
+    .ind-tag svg {
+      width: 16px;
+      height: 16px;
+      color: var(--primary);
+    }
+
+    /* OUR GOAL */
+    .goal-section {
+      background: #fff
+    }
+
+    .goal-wrap {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 64px;
+      align-items: center
+    }
+
+    .goal-text h2 {
+      font-size: clamp(26px, 3.5vw, 38px);
+      font-weight: 800;
+      margin-bottom: 16px;
+      line-height: 1.22
+    }
+
+    .goal-text p {
+      color: var(--gray);
+      font-size: 16px;
+      margin-bottom: 20px
+    }
+
+    .goal-highlights {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 28px
+    }
+
+    .g-card {
+      background: var(--light);
+      border-radius: 14px;
+      padding: 24px 20px;
+      border-left: 4px solid var(--primary);
+      transition: .35s
+    }
+
+    .g-card:hover {
+      background: #fff;
+      box-shadow: var(--shadow);
+      transform: translateX(5px)
+    }
+
+    .g-card h4 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 6px
+    }
+
+    .g-card p {
+      color: var(--gray);
+      font-size: 14px;
+      line-height: 1.6;
+      margin: 0
+    }
+
+    .goal-visual {
+      position: relative
+    }
+
+    .goal-visual img {
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: var(--shadow-lg)
+    }
+
+    .goal-overlay {
+      position: absolute;
+      bottom: 24px;
+      left: 24px;
+      right: 24px;
+      background: rgba(25, 138, 166, .92);
+      backdrop-filter: blur(8px);
+      border-radius: 14px;
+      padding: 24px;
+      border: 1px solid rgba(255, 255, 255, .25)
+    }
+
+    .goal-overlay p {
+      color: #fff;
+      font-size: 15px;
+      font-style: italic;
+      line-height: 1.65;
+      margin: 0
+    }
+
+    .goal-overlay cite {
+      display: block;
+      color: #fff;
+      font-size: 12.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.4px;
+      margin-top: 10px;
+      font-style: normal
+    }
+
+    /* COMMITMENTS */
+    .commit-section {
+      background: #198AA6;
+      padding: 90px 0
+    }
+
+    .commit-intro {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 56px
+    }
+
+    .commit-intro h2 {
+      font-size: clamp(28px, 4vw, 44px);
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 14px
+    }
+
+    .commit-intro p {
+      color: #e6f4f8;
+      font-size: 16.5px
+    }
+
+    .commit-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px
+    }
+
+    @media (max-width: 992px) {
+      .commit-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .commit-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .commit-card {
+      background: rgba(255, 255, 255, .12);
+      border: 1px solid rgba(255, 255, 255, .22);
+      border-radius: var(--radius);
+      padding: 36px 28px;
+      transition: .4s;
+      position: relative;
+      overflow: hidden
+    }
+
+    .commit-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(90deg, #fff, var(--accent));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: .4s
+    }
+
+    .commit-card:hover::after {
+      transform: scaleX(1)
+    }
+
+    .commit-card:hover {
+      background: rgba(255, 255, 255, .22);
+      border-color: rgba(255, 255, 255, .5);
+      transform: translateY(-6px)
+    }
+
+    .cc-icon {
+      width: 58px;
+      height: 58px;
+      border-radius: 14px;
+      background: #fff;
+      display: grid;
+      place-items: center;
+      color: #198AA6;
+      margin-bottom: 20px;
+      transition: .4s;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, .08);
+    }
+
+    .commit-card:hover .cc-icon {
+      background: var(--accent);
+      color: #fff;
+      transform: rotate(-6deg) scale(1.05)
+    }
+
+    .cc-icon svg {
+      width: 26px;
+      height: 26px
+    }
+
+    .commit-card h3 {
+      font-size: 19px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 10px
+    }
+
+    .commit-card p {
+      color: #e6f4f8;
+      font-size: 15px;
+      line-height: 1.7
+    }
+
+    /* INDUSTRIES WE SERVE */
+    .industries-section {
+      background: var(--light)
+    }
+
+    .industries-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 20px
+    }
+
+    @media (max-width: 1100px) {
+      .industries-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .industries-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      }
+    }
+
+    .industry-card {
+      background: #fff;
+      border-radius: var(--radius);
+      padding: 28px 20px;
+      text-align: center;
+      box-shadow: var(--shadow);
+      border: 1px solid #e6eff0;
+      transition: .4s;
+      cursor: default
+    }
+
+    .industry-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--primary)
+    }
+
+    .ic-icon {
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, rgba(25, 138, 166, .14), rgba(25, 138, 166, .05));
+      display: grid;
+      place-items: center;
+      color: var(--primary);
+      margin: 0 auto 16px;
+      transition: .4s
+    }
+
+    .industry-card:hover .ic-icon {
+      background: var(--primary);
+      color: #fff
+    }
+
+    .ic-icon svg {
+      width: 28px;
+      height: 28px
+    }
+
+    .industry-card h3 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 6px
+    }
+
+    .industry-card p {
+      color: var(--gray);
+      font-size: 13.5px;
+      margin: 0
+    }
+
+    /* CTA */
+    .cta-section {
+      background: var(--light);
+      padding: 90px 0
+    }
+
+    .cta-box {
+      background: linear-gradient(135deg, #198AA6 0%, #13748d 50%, #0E5B6E 100%);
+      border-radius: 24px;
+      padding: 70px 60px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 20px 45px rgba(25, 138, 166, .25);
+    }
+
+    .cta-box::before {
+      content: '';
+      position: absolute;
+      top: -70px;
+      right: -70px;
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, .08);
+      pointer-events: none
+    }
+
+    .cta-box::after {
+      content: '';
+      position: absolute;
+      bottom: -50px;
+      left: -50px;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      background: rgba(252, 140, 76, .12);
+      pointer-events: none
+    }
+
+    .cta-box h2 {
+      font-size: clamp(26px, 4vw, 42px);
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 14px;
+      line-height: 1.2;
+      position: relative
+    }
+
+    .cta-box .cta-sub {
+      font-size: 15px;
+      font-weight: 600;
+      color: #FC8C4C;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 16px;
+      display: block;
+      position: relative
+    }
+
+    .cta-box p {
+      color: #e6f4f8;
+      font-size: 16.5px;
+      max-width: 620px;
+      margin: 0 auto 36px;
+      position: relative
+    }
+
+    .cta-btns {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+      position: relative
+    }
+
+    /* FOOTER */
+    footer {
+      background: #1e2428;
+      color: #a5b6c0;
+      padding: 70px 0 0
+    }
+
+    .f-grid {
+      display: grid;
+      grid-template-columns: 1.7fr 1fr 1.1fr 1.3fr;
+      gap: 40px;
+      padding-bottom: 50px
+    }
+
+    footer h4 {
+      color: #fff;
+      font-size: 17px;
+      margin-bottom: 20px
+    }
+
+    footer li {
+      margin-bottom: 11px;
+      font-size: 15px
+    }
+
+    footer li a:hover {
+      color: var(--accent);
+      padding-left: 5px;
+      transition: .3s;
+      display: inline-block
+    }
+
+    footer .logo {
+      color: #fff;
+      margin-bottom: 16px
+    }
+
+    .f-bottom {
+      border-top: 1px solid rgba(255, 255, 255, .1);
+      padding: 22px 0;
+      text-align: center;
+      font-size: 14px
+    }
+
+    .f-bottom span {
+      color: var(--accent)
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(36px);
+      transition: .8s cubic-bezier(.2, .8, .2, 1)
+    }
+
+    .reveal.in {
+      opacity: 1;
+      transform: none
+    }
+
+    @media(max-width:992px) {
+
+      .who-wrap,
+      .exp-wrap,
+      .goal-wrap {
+        grid-template-columns: 1fr
+      }
+
+      .who-img {
+        order: -1
+      }
+
+      .exp-img {
+        order: -1
+      }
+
+      .f-grid {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .stats-inner {
+        flex-wrap: wrap
+      }
+
+      .stat-cell {
+        min-width: 45%;
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, .18)
+      }
+    }
+
+    @media(max-width:768px) {
+      section {
+        padding: 65px 0
+      }
+
+      .burger {
+        display: flex
+      }
+
+      .menu-backdrop {
+        display: block;
+        position: fixed;
+        inset: 0;
+        background: rgba(14, 34, 48, 0.6);
+        backdrop-filter: blur(4px);
+        opacity: 0;
+        visibility: hidden;
+        transition: .35s ease;
+        z-index: 998;
+      }
+
+      .menu-backdrop.open {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 85%;
+        max-width: 320px;
+        height: 100vh;
+        background: #fff;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        gap: 2px;
+        padding: 24px 20px 40px;
+        box-shadow: -10px 0 35px rgba(0, 0, 0, .2);
+        transition: right .35s cubic-bezier(0.4, 0, 0.2, 1);
+        z-index: 999;
+        overflow-y: auto;
+      }
+
+      .menu.open {
+        right: 0;
+      }
+
+      .menu-close-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding-bottom: 16px;
+        margin-bottom: 12px;
+        border-bottom: 1px solid #eef3f4;
+      }
+
+      .menu-drawer-title {
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        color: var(--primary);
+      }
+
+      .menu-close {
+        background: #f0f6f6;
+        border: none;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        font-size: 24px;
+        line-height: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        color: var(--dark);
+        transition: .25s;
+      }
+
+      .menu-close:hover {
+        background: var(--primary);
+        color: #fff;
+      }
+
+      .menu a:not(.nav-cta) {
+        color: var(--dark) !important;
+        width: 100%;
+        padding: 13px 14px;
+        border-radius: 8px;
+        border-bottom: 1px solid #f2f6f7;
+        font-size: 16px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        transition: .2s;
+      }
+
+      .menu a::after {
+        display: none !important;
+      }
+
+      .menu a:not(.nav-cta):hover {
+        background: #f4fafb;
+        color: #FC8C4C !important;
+      }
+
+      .menu a:not(.nav-cta).active {
+        color: var(--primary) !important;
+        background: rgba(25, 138, 166, 0.08);
+        font-weight: 700;
+      }
+
+      .menu .menu-cta-wrap {
+        margin-top: 18px;
+        width: 100%;
+      }
+
+      .menu a.nav-cta,
+      .menu .nav-cta {
+        background: #FC8C4C !important;
+        color: #ffffff !important;
+        border: none !important;
+        border-bottom: none !important;
+        width: 100% !important;
+        text-align: center !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding: 14px 24px !important;
+        border-radius: 50px !important;
+        font-size: 15px !important;
+        font-weight: 700 !important;
+        box-shadow: 0 6px 18px rgba(252, 140, 76, .35) !important;
+        transition: .3s !important;
+      }
+
+      .menu a.nav-cta:hover,
+      .menu .nav-cta:hover {
+        background: #E06F2D !important;
+        color: #ffffff !important;
+        box-shadow: 0 10px 24px rgba(252, 140, 76, .48) !important;
+        transform: translateY(-2px);
+      }
+
+      .f-grid {
+        grid-template-columns: 1fr;
+        gap: 30px
+      }
+
+      .logo-img {
+        height: 38px;
+        padding: 0 !important;
+        background: transparent !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+      }
+
+      header.scrolled .logo-img {
+        height: 35px;
+        padding: 0 !important;
+        background: transparent !important;
+        box-shadow: none !important;
+      }
+
+      .who-img-badge {
+        right: 10px;
+        bottom: 10px
+      }
+
+      .goal-highlights {
+        grid-template-columns: 1fr
+      }
+
+      .cta-box {
+        padding: 44px 24px
+      }
+    }
+
+    /* BOTTOM INQUIRY SECTION */
+    .inquiry-section {
+      background: var(--light);
+      padding: 90px 0;
+      position: relative;
+    }
+
+    .inquiry-card {
+      background: #fff;
+      border-radius: 24px;
+      box-shadow: var(--shadow-lg);
+      border: 1px solid rgba(25, 138, 166, 0.15);
+      padding: 50px 48px;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .inquiry-header {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 40px;
+    }
+
+    .inquiry-header h2 {
+      font-size: clamp(26px, 3.5vw, 36px);
+      font-weight: 800;
+      color: var(--dark);
+      margin: 12px 0 10px;
+    }
+
+    .inquiry-header p {
+      color: var(--gray);
+      font-size: 15.5px;
+      line-height: 1.6;
+    }
+
+    .inquiry-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .inquiry-group {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .inquiry-group.full-width {
+      grid-column: 1 / -1;
+    }
+
+    .inquiry-group label {
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--dark);
+      letter-spacing: .3px;
+    }
+
+    .inquiry-group label span {
+      color: var(--accent);
+    }
+
+    .inquiry-group input,
+    .inquiry-group select,
+    .inquiry-group textarea {
+      width: 100%;
+      padding: 13px 16px;
+      border: 1.5px solid #dce8ea;
+      border-radius: 10px;
+      font-size: 15px;
+      font-family: var(--font);
+      color: var(--dark);
+      background: #f7fbfc;
+      transition: .3s;
+      outline: none;
+    }
+
+    .inquiry-group input:focus,
+    .inquiry-group select:focus,
+    .inquiry-group textarea:focus {
+      border-color: var(--primary);
+      background: #fff;
+      box-shadow: 0 0 0 4px rgba(25, 138, 166, .12);
+    }
+
+    .inquiry-group textarea {
+      resize: vertical;
+      min-height: 110px;
+    }
+
+    .inquiry-actions {
+      grid-column: 1 / -1;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .inquiry-btn {
+      min-width: 240px;
+      padding: 15px 36px;
+      background: #FC8C4C;
+      color: #fff;
+      border: none;
+      border-radius: 50px;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      letter-spacing: .4px;
+      transition: .35s;
+      box-shadow: 0 8px 20px rgba(252, 140, 76, .35);
+    }
+
+    .inquiry-btn:hover {
+      background: #E06F2D;
+      transform: translateY(-3px);
+      box-shadow: 0 14px 28px rgba(252, 140, 76, .45);
+    }
+
+    .inquiry-success {
+      display: none;
+      background: linear-gradient(135deg, rgba(252, 140, 76, .12), rgba(25, 138, 166, .08));
+      border: 1.5px solid var(--accent);
+      border-radius: 14px;
+      padding: 24px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .inquiry-success h4 {
+      color: var(--primary-dark);
+      font-size: 19px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .inquiry-success p {
+      color: var(--gray);
+      font-size: 15px;
+    }
+
+    @media (max-width: 768px) {
+      .inquiry-card {
+        padding: 36px 20px;
+      }
+
+      .inquiry-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .inquiry-btn {
+        width: 100%;
+      }
+    }
+
+
+    /* SERVICES DROPDOWN */
+    .has-dropdown {
+      position: relative;
+    }
+
+    .dropdown-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+    }
+
+    .dropdown-toggle .chevron {
+      transition: transform .3s ease;
+    }
+
+    .has-dropdown:hover .dropdown-toggle .chevron {
+      transform: rotate(180deg);
+    }
+
+    .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%) translateY(14px);
+      background: #ffffff;
+      min-width: 250px;
+      padding: 10px 8px;
+      border-radius: 14px;
+      box-shadow: 0 16px 40px rgba(14, 34, 48, 0.18);
+      border: 1px solid rgba(25, 138, 166, 0.15);
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: all .25s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 1100;
+      list-style: none;
+    }
+
+    .dropdown-menu::before {
+      content: '';
+      position: absolute;
+      top: -6px;
+      left: 50%;
+      transform: translateX(-50%) rotate(45deg);
+      width: 12px;
+      height: 12px;
+      background: #ffffff;
+      border-left: 1px solid rgba(25, 138, 166, 0.15);
+      border-top: 1px solid rgba(25, 138, 166, 0.15);
+    }
+
+    .has-dropdown:hover .dropdown-menu,
+    .has-dropdown:focus-within .dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transform: translateX(-50%) translateY(6px);
+    }
+
+    .dropdown-menu li {
+      margin: 0;
+      width: 100%;
+    }
+
+    .dropdown-menu a {
+      display: block !important;
+      padding: 10px 16px !important;
+      color: var(--dark) !important;
+      font-size: 14.5px !important;
+      font-weight: 600 !important;
+      border-radius: 8px;
+      transition: all .2s ease !important;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .dropdown-menu a::after {
+      display: none !important;
+    }
+
+    .dropdown-menu a:hover {
+      background: #EBF4F7 !important;
+      color: #FC8C4C !important;
+      padding-left: 20px !important;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header id="header">
+    <nav class="container nav">
+      <a href="index.html" class="logo" aria-label="CLEANSCOPE SERVICES Home">
+        <img src="cleanscope.png" alt="CLEANSCOPE SERVICES" class="logo-img">
+      </a>
+      <ul class="menu" id="menu">
+        <li class="menu-close-wrap">
+          <span class="menu-drawer-title"></span>
+          <button class="menu-close" id="menuClose" aria-label="Close menu">&times;</button>
+        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About Us</a></li>
+        <li class="has-dropdown">
+          <a href="index.html#services" class="dropdown-toggle">Services <svg class="chevron" viewBox="0 0 24 24"
+              width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+              stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg></a>
+          <ul class="dropdown-menu">
+            <li><a href="aged-care.html">Aged Care Cleaning</a></li>
+            <li><a href="hospitality.html">Hospitality Cleaning</a></li>
+            <li><a href="commercial.html">Commercial Spaces Cleaning</a></li>
+            <li><a href="industrial.html">Industrial Cleaning</a></li>
+            <li><a href="strata.html">Strata Cleaning</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="menu-cta-wrap"><a href="request-a-quote.html" class="btn btn-primary nav-cta">Request a Quote</a>
+        </li>
+      </ul>
+      <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </nav>
+  </header>
+  <div class="menu-backdrop" id="menuBackdrop"></div>
+
+  <!-- HERO BANNER -->
+  <div class="page-banner">
+    <div class="container">
+      <span class="tagline">About CleanScope Services</span>
+      <h1>Australian Cleaning Built on<br><span>20+ Years of Experience</span></h1>
+      <p>CleanScope Services is built on extensive hands-on experience across aged care, hospitality, commercial,
+        office, industrial and strata environments delivering quality, consistency and care to every client.</p>
+      <div class="banner-btns">
+        <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+        <a href="#who" class="btn btn-outline-light">Learn More ↓</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- STATS STRIP -->
+  <div class="stats-strip">
+    <div class="container stats-inner">
+      <div class="stat-cell">
+        <strong>20+</strong>
+        <span>Years Combined Experience</span>
+      </div>
+      <div class="stat-cell">
+        <strong>5</strong>
+        <span>Key Industries Served</span>
+      </div>
+      <div class="stat-cell">
+        <strong>100%</strong>
+        <span>Quality Focused</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- WHO WE ARE -->
+  <section class="who-section" id="who">
+    <div class="container who-wrap">
+      <div class="who-text reveal">
+        <span class="tagline">Who We Are</span>
+        <h2>An Australian Cleaning Company Built on Experience</h2>
+        <p>CleanScope Services is an Australian cleaning company built on more than 20 years of combined industry
+          experience. Our leadership team brings extensive hands-on experience across aged care, hospitality, commercial
+          and office environments, industrial facilities and strata properties.</p>
+        <p>We understand that every environment is different and requires a cleaning approach that meets its specific
+          needs. From maintaining high standards of hygiene and presentation in aged care and hospitality settings to
+          delivering reliable cleaning solutions for commercial, industrial and strata properties, we focus on
+          quality, consistency and attention to detail.</p>
+        <a href="contact.html" class="btn btn-primary" style="margin-top:10px">Work With Us →</a>
+      </div>
+      <div class="who-img reveal">
+        <img src="img/about-page.png" alt="CleanScope Services leadership and team">
+        <div class="who-img-badge">
+          <strong>100%</strong>
+          <span>Australian Owned</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="exp-section">
+    <div class="container exp-wrap">
+      <div class="exp-text reveal">
+        <span class="tagline">Well-Established Experience</span>
+        <h2>Experience That's Well Established Across Complex Environments</h2>
+        <p>While CleanScope Services is a growing business, our experience is well established. Our team has worked in
+          complex operational environments where cleanliness, safety, compliance, reliability and customer service are
+          essential.</p>
+        <p>We bring this practical industry knowledge and professional approach to every service we deliver whether
+          it's a sensitive aged care environment, a fast-paced hospitality setting or a demanding industrial facility.
+        </p>
+        <div class="industry-tags">
+          <span class="ind-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78z" />
+            </svg>
+            Aged Care
+          </span>
+          <span class="ind-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 21h18M4 21V10h16v11" />
+            </svg>
+            Hospitality
+          </span>
+          <span class="ind-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="3" width="20" height="14" rx="2" />
+            </svg>
+            Commercial
+          </span>
+          <span class="ind-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M2 20h20M4 20V9l5 3V9l5 3V4l6 4v12" />
+            </svg>
+            Industrial
+          </span>
+          <span class="ind-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 21h18M5 21V7l7-4 7 4v14" />
+            </svg>
+            Strata
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR GOAL -->
+  <section class="goal-section">
+    <div class="container goal-wrap">
+      <div class="goal-text reveal">
+        <span class="tagline">Our Goal</span>
+        <h2>Dependable, Tailored Cleaning Solutions That Clients Can Trust</h2>
+        <p>Our goal is simple to provide dependable, tailored cleaning solutions that clients can trust. We take the
+          time to understand each client's requirements, develop the right cleaning approach and maintain consistent
+          standards across every service.</p>
+        <p>We are committed to building long-term partnerships through professional service, reliable performance and a
+          genuine commitment to getting the job done right.</p>
+        <div class="goal-highlights">
+          <div class="g-card">
+            <h4>Understand Requirements</h4>
+            <p>We invest time in understanding each client's specific environment, priorities and expectations.</p>
+          </div>
+          <div class="g-card">
+            <h4>Develop the Right Approach</h4>
+            <p>Tailored cleaning programs built specifically around each facility's layout, schedule and needs.</p>
+          </div>
+          <div class="g-card">
+            <h4>Maintain Consistent Standards</h4>
+            <p>The same high level of quality and presentation delivered every single visit without exception.</p>
+          </div>
+          <div class="g-card">
+            <h4>Build Long-Term Partnerships</h4>
+            <p>We evolve with our clients adapting to changing requirements and growing together over time.</p>
+          </div>
+        </div>
+      </div>
+      <div class="goal-visual reveal">
+        <img src="img/aboutunderourgoal.png" alt="CleanScope Services dependable cleaning partnerships">
+        <div class="goal-overlay">
+          <p>"We take the time to understand each client's requirements, develop the right cleaning approach and
+            maintain consistent standards across every service."</p>
+          <cite> CleanScope Services</cite>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMITMENTS -->
+  <section class="commit-section">
+    <div class="container">
+      <div class="commit-intro reveal">
+        <span class="tagline" style="background:rgba(255,255,255,.12);color:#fff">Our Commitments</span>
+        <h2>What We Stand For</h2>
+        <p>At CleanScope Services, we are committed to building long-term partnerships through professional service,
+          reliable performance and a genuine commitment to getting the job done right.</p>
+      </div>
+      <div class="commit-grid">
+        <div class="commit-card reveal">
+          <div class="cc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+              <path d="M22 4L12 14.01l-3-3" />
+            </svg>
+          </div>
+          <h3>Quality</h3>
+          <p>We hold ourselves to a high standard on every job. Quality is not an afterthought it is built into every
+            process, every visit and every service we deliver.</p>
+        </div>
+        <div class="commit-card reveal">
+          <div class="cc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="12 6 12 12 16 14" />
+            </svg>
+          </div>
+          <h3>Consistency</h3>
+          <p>Clients rely on us because we show up and deliver the same result every time. Consistency is what allows
+            our clients to trust us and focus on their own operations.</p>
+        </div>
+        <div class="commit-card reveal">
+          <div class="cc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+          </div>
+          <h3>Reliability</h3>
+          <p>We do what we say we will do. Our clients can depend on us to be there, to communicate clearly and to
+            perform to the agreed standard every single time.</p>
+        </div>
+        <div class="commit-card reveal">
+          <div class="cc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+              <circle cx="9.5" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg>
+          </div>
+          <h3>Partnership</h3>
+          <p>We go beyond transactions and aim to become a trusted extension of our clients' teams providing
+            responsive support and evolving alongside their needs.</p>
+        </div>
+        <div class="commit-card reveal">
+          <div class="cc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            </svg>
+          </div>
+          <h3>Attention to Detail</h3>
+          <p>In our work, the details matter. We pay close attention to every area, every surface and every task
+            because quality is in the details.</p>
+        </div>
+        <div class="commit-card reveal">
+          <div class="cc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 9.5a19.79 19.79 0 0 1-3-8.59A2 2 0 0 1 3.66 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.59a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+          </div>
+          <h3>Communication</h3>
+          <p>We maintain clear, open and responsive communication with every client so issues are resolved quickly and
+            services always align with your expectations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INDUSTRIES WE SERVE -->
+  <section class="industries-section">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="tagline">Industries We Serve</span>
+        <h2>Cleaning Expertise Across Key Sectors</h2>
+        <p>Our experience spans key industries each with its own unique requirements, compliance needs and
+          operational environment.</p>
+      </div>
+      <div class="industries-grid">
+        <a href="aged-care.html" class="industry-card reveal">
+          <div class="ic-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78z" />
+            </svg>
+          </div>
+          <h3>Aged Care</h3>
+          <p>Respectful, compliant cleaning for residential care facilities.</p>
+        </a>
+        <a href="hospitality.html" class="industry-card reveal">
+          <div class="ic-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <path d="M3 21h18M4 21V10h16v11" />
+              <path d="M8 10V6a4 4 0 0 1 8 0v4" />
+            </svg>
+          </div>
+          <h3>Hospitality</h3>
+          <p>Guest-focused cleaning for hotels, restaurants and venues.</p>
+        </a>
+        <a href="commercial.html" class="industry-card reveal">
+          <div class="ic-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <rect x="2" y="3" width="20" height="14" rx="2" />
+              <path d="M8 21h8M12 17v4" />
+            </svg>
+          </div>
+          <h3>Commercial</h3>
+          <p>Professional cleaning for commercial buildings.</p>
+        </a>
+        <a href="industrial.html" class="industry-card reveal">
+          <div class="ic-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <path d="M2 20h20M4 20V9l5 3V9l5 3V4l6 4v12" />
+            </svg>
+          </div>
+          <h3>Industrial</h3>
+          <p>Safety-first cleaning for warehouses and manufacturing sites.</p>
+        </a>
+        <a href="strata.html" class="industry-card reveal">
+          <div class="ic-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <path d="M3 21h18M5 21V7l7-4 7 4v14" />
+              <path d="M9 21v-6h6v6" />
+            </svg>
+          </div>
+          <h3>Strata</h3>
+          <p>Reliable common area cleaning for residential complexes.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-box reveal">
+        <span class="cta-sub">Trusted Cleaning • Complete Care</span>
+        <h2>Ready to Experience the CleanScope Difference?</h2>
+        <p>Whether you manage an aged care facility, a hospitality venue, a commercial office or a strata property
+          CleanScope Services is ready to become your trusted cleaning partner. Let's talk about your needs.</p>
+        <div class="cta-btns">
+          <a href="request-a-quote.html" class="btn btn-primary">Request a Quote</a>
+          <a href="index.html#services" class="btn btn-outline-light">Explore Our Services →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container f-grid">
+      <div>
+        <div class="logo">
+          <a href="index.html" style="display:inline-block;text-decoration:none;" aria-label="CLEANSCOPE SERVICES Home">
+            <img src="cleanscope.png" alt="CLEANSCOPE SERVICES" class="logo-img footer-logo-img">
+          </a>
+        </div>
+        <p>Tailored cleaning solutions for aged care, hospitality, commercial, industrial and strata environments
+          delivered
+          with quality, consistency and care.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="request-a-quote.html">Request a Quote</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="aged-care.html">Aged Care Cleaning</a></li>
+          <li><a href="hospitality.html">Hospitality Cleaning</a></li>
+          <li><a href="commercial.html">Commercial Cleaning</a></li>
+          <li><a href="industrial.html">Industrial Cleaning</a></li>
+          <li><a href="strata.html">Strata Cleaning</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact Info</h4>
+        <ul>
+          <li>📞 <a href="tel:0430090734" style="color:inherit;">0430 090 734</a></li>
+          <li>✉️ <a href="mailto:info@cleanscopeservices.com.au"
+              style="color:inherit;">info@cleanscopeservices.com.au</a></li>
+          <li>📍 Australia Wide Service</li>
+          <li>⏰ Mon – Sun: 24/7 Operations</li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <div class="container">
+        &copy; <span id="year"></span> CleanScope Services. All Rights Reserved. Built with care.
+      </div>
+    </div>
+  </footer>
+
+  <button id="top" aria-label="Back to top">↑</button>
+
+  <script>
+    const header = document.getElementById('header');
+    const topBtn = document.getElementById('top');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 60);
+      topBtn.classList.toggle('show', window.scrollY > 400);
+    });
+    topBtn.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    const burger = document.getElementById('burger');
+    const menu = document.getElementById('menu');
+    const menuClose = document.getElementById('menuClose');
+    const menuBackdrop = document.getElementById('menuBackdrop');
+
+    function toggleMenu(open) {
+      const isOpen = open !== undefined ? open : !menu.classList.contains('open');
+      menu.classList.toggle('open', isOpen);
+      burger.classList.toggle('open', isOpen);
+      if (menuBackdrop) menuBackdrop.classList.toggle('open', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    }
+
+    burger.addEventListener('click', () => toggleMenu());
+    if (menuClose) menuClose.addEventListener('click', () => toggleMenu(false));
+    if (menuBackdrop) menuBackdrop.addEventListener('click', () => toggleMenu(false));
+    menu.querySelectorAll('a:not(.dropdown-toggle)').forEach(link => {
+      link.addEventListener('click', () => toggleMenu(false));
+    });
+
+    // Mobile Dropdown
+    const dropdownToggle = document.querySelector('.dropdown-toggle');
+    const hasDropdown = document.querySelector('.has-dropdown');
+    if (dropdownToggle && hasDropdown) {
+      dropdownToggle.addEventListener('click', (e) => {
+        if (window.innerWidth <= 991) {
+          e.preventDefault();
+          hasDropdown.classList.toggle('open');
+        }
+      });
+    }
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          setTimeout(() => e.target.classList.add('in'), i * 80);
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>
